@@ -34,4 +34,4 @@ jobs:
           cargo run -q -p spike-cli --locked -- fetch --id wikipedia-en-knots
           cargo run -q -p spike-cli --locked -- fetch --id wikipedia-es-climate-change
       - name: Tests (locked dependencies)
-        run: cargo test --workspace --locked --no-fail-fast
+        run: cargo test --workspace --locked --no-fail-fast -- --test-threads=1

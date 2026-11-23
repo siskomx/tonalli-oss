@@ -55,3 +55,6 @@ third_party/btleplug-0.12.0/** -text -whitespace
 third_party/mesh-gateway-licenses/** -text -whitespace
 broker/licenses/** -text -whitespace
 crates/meshtastic-fork/** -text -whitespace
+
+# The article fixture ZIMs were built from CRLF checkouts; keep sources byte-identical on every OS.
+crates/core/tests/fixtures/articles/source/** text=auto eol=crlf
