@@ -29,5 +29,11 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y --no-install-recommends cmake clang perl make pkg-config
       - name: Toolchain (from rust-toolchain.toml)
         run: rustup show
+      - name: Test pack (14 MB English Wikipedia ZIM, checksum verified)
+        run: |
+          mkdir -p docs/spike/packs
+          curl -fsSL --retry 3 -o docs/spike/packs/wikipedia_en_knots_maxi_2026-10.zim \
+            https://ftp.nluug.nl/pub/kiwix/zim/wikipedia/wikipedia_en_knots_maxi_2026-10.zim
+          echo "29a3ffa52a725d0ef9dd5359d27b864ec8454c61430c0bfb15fd1929f4b73390  docs/spike/packs/wikipedia_en_knots_maxi_2026-10.zim" | sha256sum -c -
       - name: Tests (locked dependencies)
         run: cargo test --workspace --locked --no-fail-fast
