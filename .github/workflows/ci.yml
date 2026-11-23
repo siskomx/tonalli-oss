@@ -1,0 +1,33 @@
+name: CI
+# Checks for pull requests and forks. Android/Windows packages are built locally, not here.
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  privacy:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Privacy rules
+        run: python3 ci/test_privacy.py
+  rust:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Build tools
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends cmake clang perl make pkg-config
+      - name: Toolchain (from rust-toolchain.toml)
+        run: rustup show
+      - name: Tests (locked dependencies)
+        run: cargo test --workspace --locked
