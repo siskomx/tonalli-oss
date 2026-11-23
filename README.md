@@ -3,6 +3,29 @@
 A standalone offline knowledge and media app for Android and Windows, with a
 shared React interface and Rust core. Licensed GPL-3.0-or-later.
 
+## Download and use
+
+Get the Android APK, Windows ZIP or iPhone IPA from the
+[latest release](https://github.com/siskomx/tonalli-oss/releases/latest); each file's SHA-256 is in
+`SHA256.json`. A step-by-step guide with screenshots is in [walkthrough](walkthrough/README.md)
+(Spanish: [guía rápida](walkthrough/LEEME.md)).
+
+## In-app updates (optional, off by default)
+
+In Tonalli open **Settings -> AI and updates -> App updates** and enter:
+
+- Update address: `siskomx/tonalli-oss`
+- Trusted publisher key: `5b08efb736aecf8bfe50d86c65db8df91ce8bcfd68839e55771e811dc15b9bbe`
+
+Turn on **Check for updates** and press **Save**. Tonalli contacts only that address, only after you turn
+this on, and installs an update only if its manifest is signed with the key above and the file hashes
+match. Installs that already use `siskomx/tonalli-releases` keep working there.
+
+**Forks:** publish your own updates with `scripts/publish-update.ps1 -Repo you/your-fork -AssetsDir <dir>
+-KeyPath <your key>` (make a key with `cargo run -p spike-cli -- update-keygen --out <file>`). Users must
+enter your fork's address and your public key, so a fork can never push updates to users of this project.
+Keep private keys out of the repository.
+
 ## Source layout
 
 - `crates/core`: ZIM reading/search, maps, encrypted Notes, content management,
