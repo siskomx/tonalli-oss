@@ -1,0 +1,6 @@
+body { margin: 0; font-family: system-ui, sans-serif; }
+header { padding: 0.5rem 1rem; }
+h1 { display: inline; font-size: 1.2rem; margin-right: 1rem; }
+label { margin-right: 1rem; }
+#map-status { margin: 0.4rem 0; }
+#map { width: 100%; height: calc(100vh - 130px); min-height: 420px; }

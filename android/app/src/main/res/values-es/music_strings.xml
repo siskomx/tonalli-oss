@@ -1,0 +1,16 @@
+<resources>
+    <string name="music_title">Música</string>
+    <string name="music_channel">Reproducción de música</string>
+    <string name="music_playing">Reproduciendo sin conexión</string>
+    <string name="music_paused">Música en pausa</string>
+    <string name="music_play">Reproducir</string>
+    <string name="music_pause">Pausar</string>
+    <string name="music_stop">Detener</string>
+    <string name="music_previous">Anterior</string>
+    <string name="music_next">Siguiente</string>
+    <string name="music_retry">Abre Música y vuelve a intentar reproducir</string>
+    <string name="music_unavailable">No se pudo reproducir el audio. Revisa que el archivo esté disponible y sea compatible.</string>
+    <string name="music_format">No se puede reproducir este formato o archivo de audio</string>
+    <string name="music_focus">Otra aplicación usa el audio. Vuelve a intentar reproducir.</string>
+    <string name="music_save_failed">No se pudo guardar la posición de reproducción</string>
+</resources>

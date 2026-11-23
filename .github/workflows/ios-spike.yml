@@ -1,0 +1,115 @@
+name: iOS spike
+on:
+  workflow_dispatch:
+  push:
+    branches: [ios-spike]
+permissions:
+  contents: read
+env:
+  IPHONEOS_DEPLOYMENT_TARGET: '16.0'
+jobs:
+  ipa:
+    runs-on: macos-15
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22.23.2'
+          package-manager-cache: false
+      - name: Install pinned Rust with the iOS target
+        run: |
+          rustup toolchain install 1.96.1 --profile minimal
+          rustup target add aarch64-apple-ios --toolchain 1.96.1
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version: '1.25.2'
+          cache: false
+      - name: Build the country-map extractor for iPhone
+        working-directory: native/maps-extract
+        run: |
+          SDK="$(xcrun --sdk iphoneos --show-sdk-path)"
+          export GOOS=ios GOARCH=arm64 CGO_ENABLED=1 GOFLAGS=-trimpath
+          export CC="$(xcrun --sdk iphoneos --find clang)"
+          export CGO_CFLAGS="-isysroot $SDK -arch arm64 -miphoneos-version-min=16.0 -ffile-prefix-map=$GITHUB_WORKSPACE=/tonalli -ffile-prefix-map=/Users/runner=/toolchain"
+          export CGO_LDFLAGS="-isysroot $SDK -arch arm64 -miphoneos-version-min=16.0"
+          mkdir -p "$GITHUB_WORKSPACE/ios/native"
+          go build '-ldflags=-s -w' -buildmode=c-archive -o "$GITHUB_WORKSPACE/ios/native/libtonalli_maps.a" .
+          ls -l "$GITHUB_WORKSPACE/ios/native"
+      - name: Make sure CMake is available for llama.cpp
+        run: command -v cmake || brew install cmake
+      - name: Build the shared UI and embed it
+        env:
+          # Lets the map-asset script make its one GitHub API call as this job, not anonymously.
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          npm --prefix web-stub ci
+          python3 scripts/prepare-map-assets.py
+          npm --prefix web-stub run build
+          (cd web-stub/dist && zip -qr "$GITHUB_WORKSPACE/ios/web.zip" .)
+          ls -l ios/web.zip
+      - name: Create the Xcode project without signing
+        working-directory: ios
+        run: |
+          npm install --no-audit --no-fund
+          npm run tauri -- ios init --ci
+          python3 - <<'PY'
+          import pathlib
+          spec = pathlib.Path('gen/apple/project.yml')
+          text = spec.read_text()
+          marker = '        ENABLE_BITCODE: false\n'
+          assert marker in text
+          text = text.replace(marker, marker + '        CODE_SIGNING_ALLOWED: "NO"\n        CODE_SIGNING_REQUIRED: "NO"\n        CODE_SIGN_IDENTITY: ""\n', 1)
+          spec.write_text(text)
+          PY
+          (cd gen/apple && xcodegen generate --spec project.yml)
+      - name: Keep runner paths out of the binary
+        working-directory: ios
+        run: |
+          # xcodebuild drops the environment, so this has to live in a Cargo config file.
+          mkdir -p .cargo /private/tmp/tonalli-target
+          cat > .cargo/config.toml <<EOF
+          [build]
+          target-dir = "/private/tmp/tonalli-target"
+          rustflags = [
+            "--remap-path-prefix=/Users/runner=/toolchain",
+            "-C", "debuginfo=0",
+          ]
+          [env]
+          CFLAGS = "-ffile-prefix-map=/Users/runner=/toolchain"
+          CXXFLAGS = "-ffile-prefix-map=/Users/runner=/toolchain"
+          EOF
+          cat .cargo/config.toml
+      - name: Build the app
+        working-directory: ios
+        continue-on-error: true
+        env:
+          CARGO_PROFILE_RELEASE_DEBUG: '0'
+        run: npm run tauri -- ios build --ci --target aarch64 --features ai,mesh -v
+      - name: Package the unsigned IPA
+        run: |
+          find ios/gen/apple -maxdepth 6 \( -name '*.xcarchive' -o -name '*.app' -o -name '*.ipa' \) | head -20
+          archive="$(find ios/gen/apple -maxdepth 6 -name '*.xcarchive' | head -1)"
+          test -n "$archive"
+          app="$(find "$archive/Products/Applications" -maxdepth 1 -name '*.app' | head -1)"
+          test -n "$app"
+          mkdir -p artifacts/Payload
+          cp -R "$app" artifacts/Payload/
+          # iOS silently refuses a permission whose reason text is missing, so fail the build instead.
+          for key in NSLocationWhenInUseUsageDescription NSLocalNetworkUsageDescription NSBluetoothAlwaysUsageDescription; do
+            plutil -extract "$key" raw "artifacts/Payload/$(basename "$app")/Info.plist" > /dev/null || { echo "Info.plist is missing $key"; exit 1; }
+          done
+          (cd artifacts && zip -qry Tonalli-iOS-unsigned-test.ipa Payload && rm -rf Payload)
+          ls -l artifacts
+      - name: Inspect the IPA for private paths
+        continue-on-error: true
+        run: python3 ci/privacy.py --artifacts artifacts --explain
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: Tonalli-iOS-unsigned-test-${{ github.sha }}
+          path: artifacts/*.ipa
+          if-no-files-found: error
+          retention-days: 7
+          compression-level: 0

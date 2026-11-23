@@ -1,0 +1,65 @@
+/* Adapted in part from Project NOMAD admin/inertia/css/app.css at c903da48c97bc02f5cdfeff2ebcde00a82dfec8e.
+ * Copyright 2024-2026 Crosstalk Solutions LLC. Apache-2.0.
+ * Modifications: semantic tokens and responsive standalone sidebar/page layout. */
+@import "tailwindcss" source(none);
+@source "../";
+@source "../../index.html";
+
+body { margin: 0; background: #faf9f5; color: #172033; font-family: system-ui, sans-serif; }
+:root[data-theme="dark"] { color-scheme: dark; --color-surface-primary: #20252c; --color-surface-secondary: #292f38; --color-text-primary: #f3f4f6; --color-text-secondary: #c4c9d2; --color-text-muted: #aeb7c4; --color-border-default: #687180; --color-border-subtle: #434b57; --color-desert-sand: #252b22; }
+:root[data-theme="dark"] body { background: #171c22; color: #f3f4f6; }
+:root[data-theme="dark"] .app-card, :root[data-theme="dark"] .secondary-button { background: #20252c; color: #f3f4f6; border-color: #687180; }
+:root[data-theme="dark"] .app-brand, :root[data-theme="dark"] .reading-return, :root[data-theme="dark"] .sidebar-caption, :root[data-theme="dark"] .page-heading p { color: #d7dfc1; }
+:root[data-theme="dark"] .sidebar-item:hover { background: #3b4432; }
+:root[data-theme="dark"] input, :root[data-theme="dark"] select, :root[data-theme="dark"] textarea { background: #171c22; color: #f3f4f6; border-color: #687180; }
+:root[data-theme="dark"] :not(iframe)[class~="bg-white"], :root[data-theme="dark"] button[class~="bg-slate-100"] { background: #20252c; color: #f3f4f6; }
+:root[data-theme="dark"] a[class~="hover:bg-slate-100"]:hover { background: #353e49; }
+
+@theme {
+  --color-desert-green: #424420;
+  --color-desert-sand: #f7eedc;
+  --color-surface-primary: #ffffff;
+  --color-surface-secondary: #f9fafb;
+  --color-text-primary: #111827;
+  --color-text-secondary: #6b7280;
+  --color-text-muted: #9ca3af;
+  --color-border-default: #d1d5db;
+  --color-border-subtle: #e5e7eb;
+}
+.chat-ui { min-height: 28rem; }
+.chat-control { min-height: 44px; border: 1px solid #d1d5db; border-radius: .5rem; padding: .5rem 1rem; background: #424420; color: white; }
+.chat-control:focus-visible { outline: 2px solid #424420; outline-offset: 2px; }
+.chat-control:disabled { opacity: .5; }
+.app-layout { min-height: 100dvh; }
+.desktop-sidebar { position: fixed; inset: 0 auto 0 0; width: 260px; overflow-y: auto; background: var(--color-desert-sand); border-right: 1px solid #dedaca; }
+.sidebar-content { display: flex; flex-direction: column; gap: 28px; padding: 24px; min-height: 100%; }
+.app-brand { display: flex; align-items: center; gap: 12px; min-height: 64px; font-size: 24px; font-weight: 700; color: #424420; text-decoration: none; }
+.sidebar-item { display: flex; align-items: center; gap: 12px; border-radius: 8px; padding: 12px; min-height: 48px; font-weight: 600; text-decoration: none; }
+.sidebar-item:hover { background: #dedfc8; }
+.sidebar-current, .sidebar-current:hover { background: #424420; color: white; }
+.sidebar-caption { margin-top: auto; padding-top: 32px; color: #66684f; font-size: 14px; }
+.app-main { margin-left: 260px; padding: 40px; max-width: 1600px; }
+.app-main h2 { font-size: 28px; line-height: 1.25; font-weight: 700; margin-bottom: 16px; }
+.app-main h3 { font-size: 18px; font-weight: 600; }
+.page-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 28px; }
+.page-heading h2 { margin-bottom: 8px; }
+.page-heading p { color: #686b60; }
+.app-card { background: white; border: 1px solid #deded5; border-radius: 12px; padding: 24px; }
+.secondary-button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 8px 16px; border: 1px solid #93977c; border-radius: 8px; background: white; color: #424420; font-weight: 600; }
+.reading-return { display: inline-block; margin-bottom: 24px; color: #424420; text-decoration: underline; text-underline-offset: 4px; }
+.mobile-header { display: none; }
+.icon-button { display: inline-flex; align-items: center; justify-content: center; min-width: 48px; min-height: 48px; border-radius: 8px; }
+button, a, summary { touch-action: manipulation; }
+summary { cursor: pointer; min-height: 44px; padding: 10px 0; font-weight: 600; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid #424420; outline-offset: 3px; }
+.mobile-drawer { position: fixed; inset: 0 auto 0 0; margin: 0; width: min(320px, 90vw); max-height: 100dvh; height: 100dvh; border: none; background: var(--color-desert-sand); }
+.mobile-drawer::backdrop { background: #17203366; }
+.drawer-close { position: absolute; right: 8px; top: 8px; }
+@media (max-width: 900px) {
+  .desktop-sidebar { display: none; }
+  .mobile-header { display: flex; align-items: center; gap: 12px; padding: 8px 16px; background: var(--color-desert-sand); border-bottom: 1px solid #dedaca; font-size: 20px; font-weight: 700; }
+  .app-main { margin-left: 0; padding: 24px 16px; }
+  .app-main h2 { font-size: 24px; }
+  .page-heading { gap: 16px; }
+  .app-card { padding: 18px; }
+}

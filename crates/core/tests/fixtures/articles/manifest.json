@@ -1,0 +1,160 @@
+{
+  "python_libzim": "4.1.0",
+  "native_versions": {
+    "libzim": "9.8.2",
+    "libzstd": "1.5.7",
+    "liblzma": "5.2.11",
+    "libxapian": "1.4.23",
+    "libicu": "74.1.0"
+  },
+  "compression": "none",
+  "indexing": false,
+  "workers": 1,
+  "packs": [
+    {
+      "id": "article-benign",
+      "kind": "benign",
+      "path": "crates/core/tests/fixtures/articles/benign-v1.zim",
+      "bytes": 300587,
+      "sha256": "863303d2ebbe3ac36549346173f6dc4d3b361f633a6912aa41efbef781c6b340",
+      "uuid": "622f973e6a51a29180b1c54e7fe8a8d5",
+      "md5": "7dbf758c9628e5970421359f5dfdaee1",
+      "items": [
+        {
+          "path": "en/index.html",
+          "mime": "text/html",
+          "bytes": 1076,
+          "sha256": "1fc347b9b46d6ae93a85ecbef650b292e6a260c9bf07ff60a84d3cddd0bd52fc"
+        },
+        {
+          "path": "es/Niñez_y_educación.html",
+          "mime": "text/html",
+          "bytes": 1066,
+          "sha256": "7c5004d21470ca34276a3605edaaec4eda7e22520d7ccb4f23fc6a80ecac1bd2"
+        },
+        {
+          "path": "assets/style.css",
+          "mime": "text/css",
+          "bytes": 125,
+          "sha256": "c9f9d7f4cc50eff2b24f5373c143b43a7b6a5f4293c23390c11628a747e1d310"
+        },
+        {
+          "path": "assets/pixel.png",
+          "mime": "image/png",
+          "bytes": 75,
+          "sha256": "3380ecada7fb58dc532569278dcea5556704683b1ca70189f261730c59793177"
+        },
+        {
+          "path": "assets/body-probe.bin",
+          "mime": "application/octet-stream",
+          "bytes": 262144,
+          "sha256": "624486ccf1b6bbdbb0234ebfb1ec1179a2b3995f8806675c24ddbd7316f3132b"
+        }
+      ],
+      "redirects": [
+        [
+          "redirect/start.html",
+          "Redirect to English",
+          "en/index.html"
+        ],
+        [
+          "redirect/chain.html",
+          "Redirect chain to English",
+          "redirect/start.html"
+        ],
+        [
+          "redirect/body-probe",
+          "Redirect to body probe",
+          "assets/body-probe.bin"
+        ]
+      ],
+      "urls": {
+        "assets/body-probe.bin": "C/assets/body-probe.bin",
+        "assets/pixel.png": "C/assets/pixel.png",
+        "assets/style.css": "C/assets/style.css",
+        "en/index.html": "C/en/index.html",
+        "es/Niñez_y_educación.html": "C/es/Niñez_y_educación.html",
+        "redirect/body-probe": "C/redirect/body-probe",
+        "redirect/chain.html": "C/redirect/chain.html",
+        "redirect/start.html": "C/redirect/start.html"
+      },
+      "body_probe": {
+        "url": "C/assets/body-probe.bin",
+        "offset": 4756,
+        "bytes": 262144,
+        "blocked_offset": 4756,
+        "blocked_bytes": 262144
+      }
+    },
+    {
+      "id": "article-hostile",
+      "kind": "hostile",
+      "path": "crates/core/tests/fixtures/articles/hostile-v1.zim",
+      "bytes": 40028,
+      "sha256": "0eabaa27e1e333f564bb1da3f632ab05303c16c929d0832f5886f20819211fd5",
+      "uuid": "f01332331debeb28c869e6d688c7092d",
+      "md5": "82f676065aeceec60dbf128ff44f78d3",
+      "items": [
+        {
+          "path": "hostile/passive.html",
+          "mime": "text/html",
+          "bytes": 902,
+          "sha256": "24ffe40794e011fcdfca4407d6dd0fb4a2014c5de842ae4423f10ed32240d020"
+        },
+        {
+          "path": "hostile/all.html",
+          "mime": "text/html",
+          "bytes": 1638,
+          "sha256": "1b25e440c9d7a4dfc46b720419420dc4fbf63f2e977ee01e991a67a346b55118"
+        },
+        {
+          "path": "hostile/meta.html",
+          "mime": "text/html",
+          "bytes": 199,
+          "sha256": "120d65145abc6fbc17a89ac21e015b52c9f9b753ac70c2b97909333bf1933285"
+        },
+        {
+          "path": "hostile/top.html",
+          "mime": "text/html",
+          "bytes": 218,
+          "sha256": "2a65537f5ab9892e8d67e94193fe6f976c7b4fe821623a1ee4572cd3eb67eef8"
+        },
+        {
+          "path": "hostile/popup.html",
+          "mime": "text/html",
+          "bytes": 217,
+          "sha256": "b7b82035d332ce5d910dc7c9a5af8cf7990580b7a820ba449045002b897bba1f"
+        },
+        {
+          "path": "hostile/form.html",
+          "mime": "text/html",
+          "bytes": 456,
+          "sha256": "ecd57d84b2a2a786884a12adc0c3d042835d002c38bfbde0de392ebda081b099"
+        },
+        {
+          "path": "hostile/ping.html",
+          "mime": "text/html",
+          "bytes": 216,
+          "sha256": "3e6c9e678fd439f77a6baade7123ff6ab8038b28c160965ab4b85e448e28e5b3"
+        },
+        {
+          "path": "hostile/neutral.html",
+          "mime": "text/html",
+          "bytes": 202,
+          "sha256": "717c2e43924c582e3ac6d2aa2cd3d662eb252e219d96ab97281d69faad30c499"
+        }
+      ],
+      "redirects": [],
+      "urls": {
+        "hostile/all.html": "C/hostile/all.html",
+        "hostile/form.html": "C/hostile/form.html",
+        "hostile/meta.html": "C/hostile/meta.html",
+        "hostile/neutral.html": "C/hostile/neutral.html",
+        "hostile/passive.html": "C/hostile/passive.html",
+        "hostile/ping.html": "C/hostile/ping.html",
+        "hostile/popup.html": "C/hostile/popup.html",
+        "hostile/top.html": "C/hostile/top.html"
+      }
+    }
+  ]
+}

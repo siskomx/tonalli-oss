@@ -1,0 +1,19 @@
+crate = "llama-cpp-2"
+version = "0.1.161"
+repository = "https://github.com/utilityai/llama-cpp-rs"
+revision = "e7af607ebd5ec2932709ef918c17cca2f9b0fce4"
+crate_sha256 = "7e5249e590eab4a5015ba35cf078a4548b941e841ef8024310c3a10b2edb7179"
+license = "MIT OR Apache-2.0"
+native_dependency = "llama-cpp-sys-2"
+native_version = "0.1.161"
+native_source_revision = "d81235049384534c167caea52b85a694f6103d14"
+scope = "Owned CPU abort callback and explicit sys defaults; native sources remain in registry sys crate"
+local_lock = "Separate root-seeded lock for fork development tests; runtime sys/native source ABI unchanged"
+modifications = [
+    "model.rs: safe read-only native encoder/decoder capability getters",
+    "README.md: local-patch note; README/json.gbnf: trailing-whitespace normalization only",
+    "context.rs: owned AtomicBool abort callback, replacement ordering, context teardown lifetime; safe native causal-attention and resolved-pooling queries",
+    "Cargo.toml: disable both sys dependency defaults; keep explicit common and Mac metal forwarding",
+    "lib.rs, model/params.rs, sampling.rs: cfg-gate imports and private sanitizer used only by common",
+    "context/abort_flag_tests.rs and tests/check_manifest.py: local API, lifetime and feature regressions",
+]

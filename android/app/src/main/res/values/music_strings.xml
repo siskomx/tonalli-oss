@@ -1,0 +1,16 @@
+<resources>
+    <string name="music_title">Music</string>
+    <string name="music_channel">Music playback</string>
+    <string name="music_playing">Playing offline</string>
+    <string name="music_paused">Music paused</string>
+    <string name="music_play">Play</string>
+    <string name="music_pause">Pause</string>
+    <string name="music_stop">Stop</string>
+    <string name="music_previous">Previous</string>
+    <string name="music_next">Next</string>
+    <string name="music_retry">Open Music and try Play again</string>
+    <string name="music_unavailable">This audio could not be played. Check that the file is available and supported.</string>
+    <string name="music_format">This audio format or file cannot be played</string>
+    <string name="music_focus">Another app is using audio. Try Play again.</string>
+    <string name="music_save_failed">Playback position could not be saved</string>
+</resources>

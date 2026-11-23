@@ -1,0 +1,16 @@
+{
+  "acceptance_eligible": false,
+  "article_url": "C/Trefoil_knot",
+  "id": "small",
+  "name": "English Wikipedia knots 2026-10",
+  "prefix": "trefoil",
+  "title_index": {
+    "bytes": 54420,
+    "sha256": "e00c42904cc8fe6fdd4a416bad7d0552f51723816dfe197c6e03a4401ba32f8c"
+  },
+  "version": 1,
+  "zim": {
+    "bytes": 14093352,
+    "sha256": "29a3ffa52a725d0ef9dd5359d27b864ec8454c61430c0bfb15fd1929f4b73390"
+  }
+}

@@ -1,0 +1,27 @@
+Tonalli
+Copyright (C) 2026 Tonalli contributors
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+Portions of the shared navigation/layout, chat UI, content/download presentation, streaming helpers and accompanying tests are
+adapted from Project NOMAD, Copyright 2024-2026 Crosstalk Solutions LLC,
+under the Apache License, Version 2.0.
+
+Source: https://github.com/Crosstalk-Solutions/project-nomad
+Revision: c903da48c97bc02f5cdfeff2ebcde00a82dfec8e
+Original license: third_party/project-nomad/LICENSE
+Original paths, modified paths and hashes: third_party/project-nomad/UPSTREAM.json
+Each adapted source file marks its Tonalli modifications. Product branding,
+Inertia/Adonis coupling and Docker/Ollama deployment are not carried over.
+The original Apache license and notices are also included in the built web assets.

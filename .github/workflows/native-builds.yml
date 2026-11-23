@@ -1,0 +1,49 @@
+name: Native test builds
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  native:
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [Android, Windows]
+    runs-on: windows-2022
+    timeout-minutes: 90
+    defaults:
+      run:
+        shell: powershell
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22.23.2'
+          package-manager-cache: false
+      - uses: actions/setup-java@d1374f8ac74474200d16ef8ecee22c7ae7a51880 # v6.3.0
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version: '1.25.2'
+          cache: false
+      - name: Prepare pinned native tools
+        run: ./ci/tools.ps1
+      - name: Check privacy boundary
+        run: |
+          python ci/test_privacy.py
+          if ($LASTEXITCODE -ne 0) { throw 'Privacy checks failed' }
+      - name: Build and verify
+        run: ./ci/build.ps1 -Platform ${{ matrix.platform }}
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: Tonalli-${{ matrix.platform }}-test-${{ github.sha }}
+          path: artifacts/*
+          if-no-files-found: error
+          retention-days: 7
+          compression-level: 0

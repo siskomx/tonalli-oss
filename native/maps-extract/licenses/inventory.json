@@ -1,0 +1,65 @@
+[
+  {
+    "module": "github.com/RoaringBitmap/roaring",
+    "version": "v1.5.0",
+    "license": "Apache-2.0",
+    "sum": "h1:V0VCSiHjroItEYCM3guC8T83ehi5QMt3oM9EefTTOms=",
+    "scope": "runtime or retained upstream tests"
+  },
+  {
+    "module": "github.com/davecgh/go-spew",
+    "version": "v1.1.1",
+    "license": "ISC",
+    "sum": "h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=",
+    "scope": "runtime or retained upstream tests"
+  },
+  {
+    "module": "github.com/dustin/go-humanize",
+    "version": "v1.0.1",
+    "license": "MIT",
+    "sum": "h1:GzkhY7T5VNhEkwH0PVJgjz+fX1rhBrR7pRT3mDkpeCY=",
+    "scope": "runtime or retained upstream tests"
+  },
+  {
+    "module": "github.com/paulmach/orb",
+    "version": "v0.10.0",
+    "license": "MIT",
+    "sum": "h1:guVYVqzxHE/CQ1KpfGO077TR0ATHSNjp4s6XGLn3W9s=",
+    "scope": "runtime or retained upstream tests"
+  },
+  {
+    "module": "github.com/pmezard/go-difflib",
+    "version": "v1.0.0",
+    "license": "BSD-2-Clause",
+    "sum": "h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=",
+    "scope": "runtime or retained upstream tests"
+  },
+  {
+    "module": "github.com/stretchr/testify",
+    "version": "v1.11.1",
+    "license": "MIT",
+    "sum": "h1:7s2iGBzp5EwR7/aIZr8ao5+dra3wiQyKjjFuvgVKu7U=",
+    "scope": "runtime or retained upstream tests"
+  },
+  {
+    "module": "go.mongodb.org/mongo-driver",
+    "version": "v1.11.4",
+    "license": "Apache-2.0",
+    "sum": "h1:4ayjakA013OdpGyL2K3ZqylTac/rMjrJOMZ1EHizXas=",
+    "scope": "runtime or retained upstream tests"
+  },
+  {
+    "module": "golang.org/x/sync",
+    "version": "v0.20.0",
+    "license": "BSD-3-Clause",
+    "sum": "h1:e0PTpb7pjO8GAtTs2dQ6jYa5BWYlMuX047Dco/pItO4=",
+    "scope": "runtime or retained upstream tests"
+  },
+  {
+    "module": "gopkg.in/yaml.v3",
+    "version": "v3.0.1",
+    "license": "Apache-2.0",
+    "sum": "h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA=",
+    "scope": "runtime or retained upstream tests"
+  }
+]

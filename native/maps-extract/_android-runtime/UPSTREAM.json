@@ -1,0 +1,9 @@
+{
+  "repository": "https://go.googlesource.com/go",
+  "version": "go1.25.2",
+  "original": "src/internal/cpu/cpu_arm64_hwcap.go",
+  "original_sha256": "1828fb8a6a21a10d023f82767a14e3b37742d47d9077f64818274d7cedeea8fa",
+  "adapted_sha256": "b6cdbc16a565cb6a616cee82e650b2ce6d6945ac759656e4f35d1b881273310a",
+  "license": "BSD-3-Clause",
+  "changes": "Skip the optional MIDR_EL1 Neoverse tuning read on Android. API34 x86_64 NDK translation advertises CPUID but traps instruction 0xd5380000 with SIGILL. All HWCAP feature detection remains intact. Build overlay only; installed Go toolchain is not modified."
+}

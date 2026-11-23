@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Tonalli",
+  "version": "0.1.0",
+  "identifier": "org.tonalli.spike.ios",
+  "app": {
+    "windows": [],
+    "withGlobalTauri": false,
+    "security": { "capabilities": [] }
+  },
+  "bundle": {
+    "active": true,
+    "icon": ["icons/icon.png"],
+    "iOS": { "minimumSystemVersion": "16.0", "frameworks": ["Accelerate", "CoreFoundation", "CoreBluetooth"] }
+  }
+}

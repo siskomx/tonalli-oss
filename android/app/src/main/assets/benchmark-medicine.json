@@ -1,0 +1,16 @@
+{
+  "acceptance_eligible": true,
+  "article_url": "C/Bandage",
+  "id": "medicine",
+  "name": "WikiMed Medicine nopic 2026-10 (mid-size index fallback)",
+  "prefix": "bandage",
+  "title_index": {
+    "bytes": 13186046,
+    "sha256": "3e4f64512d3aaaa99004841ebd48fb79d5d569cdc5f3c754dc39c4f11373a598"
+  },
+  "version": 1,
+  "zim": {
+    "bytes": 1047708415,
+    "sha256": "718fadad40b3491be3fa8f95181a948e4d726f97a79a14e0ef1b90c6b2b03625"
+  }
+}

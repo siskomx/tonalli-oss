@@ -1,0 +1,13 @@
+{
+  "repository": "https://github.com/Crosstalk-Solutions/project-nomad",
+  "revision": "c903da48c97bc02f5cdfeff2ebcde00a82dfec8e",
+  "source": "admin/app/services/countries_service.ts",
+  "source_sha256": "99932097f71b186ddc5129197b91ea611f65e1307affde78637d80cbc38cf05a",
+  "adapted_sha256": "056cf7b285a09027f8d49242ae0898085fdffc4ef130baf5928b2aae94282469",
+  "code_license": "Apache-2.0",
+  "geodata_source": "admin/resources/geodata/ne_50m_admin_0_countries.geojson",
+  "geodata_sha256": "3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb",
+  "data_license": "Public domain",
+  "data_terms": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "buffer_degrees": 0.1
+}

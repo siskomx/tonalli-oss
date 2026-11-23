@@ -1,0 +1,47 @@
+{
+  "path": "crates/core/tests/fixtures/documents/documents-v1.zim",
+  "bytes": 307912,
+  "sha256": "ece79a931149a0405afbc6dcd3c411b1a2b0397b20c919d4d6e825e3e1637af6",
+  "python_libzim": "4.1.0",
+  "native_versions": {
+    "libzim": "9.8.2",
+    "libzstd": "1.5.7",
+    "liblzma": "5.2.11",
+    "libxapian": "1.4.23",
+    "libicu": "74.1.0"
+  },
+  "compression": "none",
+  "indexing": false,
+  "entries": [
+    {
+      "url": "C/index.html",
+      "mime": "text/html",
+      "bytes": 607,
+      "sha256": "96969ca1d4a4fa138561b476178958167c2305bda7ea281c4f21ee0e3d231f00"
+    },
+    {
+      "url": "C/spoof.pdf",
+      "mime": "text/html",
+      "bytes": 84,
+      "sha256": "a60dc6320859f3e16d234ad21583c69ed303ca57180f07026fdce8a0f61891ac"
+    },
+    {
+      "url": "C/docs/guide.pdf",
+      "mime": "application/pdf",
+      "bytes": 953,
+      "sha256": "03f0d728f59258bd86267f7397609747c027fa7b69ef51ba9bc9084a6187b30e"
+    },
+    {
+      "url": "C/docs/book.epub",
+      "mime": "application/epub+zip",
+      "bytes": 57484,
+      "sha256": "fe4d6d8cfa4949fce03b87840752397a6df07d8ada12de8cbc2cbf62aecf0575"
+    },
+    {
+      "url": "C/docs/comic.cbz",
+      "mime": "application/vnd.comicbook+zip",
+      "bytes": 213258,
+      "sha256": "9cbb9218de29e65a4909742c7c3e8ccd01a0134fb1d171d28863f989e5332bb3"
+    }
+  ]
+}

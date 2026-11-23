@@ -1,0 +1,9 @@
+<resources>
+    <string name="tv_channel">TV mode</string>
+    <string name="tv_notification_title">%1$s TV mode</string>
+    <string name="tv_notification_help">Selected media is readable on your local network. Stop when finished.</string>
+    <string name="tv_stop">Stop TV mode</string>
+    <string name="tv_start_failed">TV mode could not start. Check Wi-Fi and permissions, then retry while Tonalli is visible.</string>
+    <string name="tv_network_lost">TV mode stopped because the local network is unavailable.</string>
+    <string name="tv_low_battery">TV mode stopped because the battery is low.</string>
+</resources>

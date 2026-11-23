@@ -1,0 +1,115 @@
+{
+  "source": {
+    "file": "crates/core/tests/fixtures/articles/benign-v1.zim",
+    "bytes": 300587,
+    "sha256": "863303d2ebbe3ac36549346173f6dc4d3b361f633a6912aa41efbef781c6b340"
+  },
+  "images": [
+    {
+      "file": "plain-v1.iso",
+      "namespace": "plain",
+      "path": "/FIXTURE.ZIM",
+      "bytes": 675840,
+      "sha256": "30130f4dfef2d406a228cdec8d129f254db80449d1f8edcdaa9ad6310d833bc5",
+      "extents": [
+        [
+          67584,
+          300587
+        ]
+      ],
+      "payload_sha256": "863303d2ebbe3ac36549346173f6dc4d3b361f633a6912aa41efbef781c6b340",
+      "checker": "pycdlib 1.22.0 + xorriso extraction"
+    },
+    {
+      "file": "joliet-v1.iso",
+      "namespace": "joliet",
+      "path": "/Niñez_y_educación_larga_fixture.zim",
+      "bytes": 675840,
+      "sha256": "d3bae65671a72e3f1184cdcb918914dc474d4d1275dc40240e4db1efcb378000",
+      "extents": [
+        [
+          67584,
+          300587
+        ]
+      ],
+      "payload_sha256": "863303d2ebbe3ac36549346173f6dc4d3b361f633a6912aa41efbef781c6b340",
+      "checker": "pycdlib 1.22.0 + xorriso extraction"
+    },
+    {
+      "file": "rock-ridge-v1.iso",
+      "namespace": "rock-ridge",
+      "path": "/Niñez_y_educación_larga_fixture.zim",
+      "bytes": 675840,
+      "sha256": "5cca2c0216a7f7852902bce7780e3c92587cadce30fde0185bca20ef28684010",
+      "extents": [
+        [
+          67584,
+          300587
+        ]
+      ],
+      "payload_sha256": "863303d2ebbe3ac36549346173f6dc4d3b361f633a6912aa41efbef781c6b340",
+      "checker": "pycdlib 1.22.0 + xorriso extraction"
+    },
+    {
+      "file": "udf-v1.iso",
+      "namespace": "udf",
+      "path": "/Niñez_y_educación_larga_fixture.zim",
+      "bytes": 1441792,
+      "sha256": "e1462d9925d95069e714a41cad70d265d87014ff295e1c4f3a85e8dec924b37d",
+      "payload_sha256": "863303d2ebbe3ac36549346173f6dc4d3b361f633a6912aa41efbef781c6b340",
+      "checker": "Windows UDF read-only Mount-DiskImage",
+      "proof": {
+        "writer": "Windows IMAPI2FS",
+        "writer_version": "10.0.26100.1 (WinBuild.160101.0800)",
+        "reader": "Windows UDF read-only Mount-DiskImage",
+        "reader_version": "10.0.26100.7705 (WinBuild.160101.0800)",
+        "udf_revision": "1.02",
+        "namespace_path": "/Niñez_y_educación_larga_fixture.zim",
+        "source_sha256": "863303d2ebbe3ac36549346173f6dc4d3b361f633a6912aa41efbef781c6b340",
+        "bytes": 1441792,
+        "sha256": "e1462d9925d95069e714a41cad70d265d87014ff295e1c4f3a85e8dec924b37d",
+        "rebuild_sha256": "96e5a528b3d1a2b4d25dad27ced2503b715e80204104b0143baf0c87d515c80c",
+        "payload_verified": true,
+        "bit_reproducible": false
+      }
+    },
+    {
+      "file": "multi-v1.iso",
+      "namespace": "plain",
+      "path": "/MULTI.BIN",
+      "bytes": 131072,
+      "sha256": "4d4f162a2d747dbfe3b87c96cc455e505045217e14a80c8c6e65db327755eb18",
+      "extents": [
+        [
+          49152,
+          2048
+        ],
+        [
+          61440,
+          4096
+        ],
+        [
+          75776,
+          137
+        ]
+      ],
+      "payload_bytes": 6281,
+      "payload_sha256": "e519ff2d7fd25b523d843b86e59590c194fb0c1bb8284158ba152ec830baa073",
+      "parts": [
+        {
+          "bytes": 2048,
+          "byte": 17
+        },
+        {
+          "bytes": 4096,
+          "byte": 85
+        },
+        {
+          "bytes": 137,
+          "byte": 227
+        }
+      ],
+      "checker": "pycdlib 1.22.0 + xorriso extraction"
+    }
+  ]
+}

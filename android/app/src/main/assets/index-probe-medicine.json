@@ -1,0 +1,350 @@
+{
+  "version": 2,
+  "dataset_id": "medicine",
+  "generation": "generation-vHHWf6",
+  "source": {
+    "uuid": "1f8cf2fee076e0182e09004387350cba",
+    "md5": "09782d5c2dce7223830db8bd43c487b1",
+    "bytes": 1047708415,
+    "expected_sha256": "718fadad40b3491be3fa8f95181a948e4d726f97a79a14e0ef1b90c6b2b03625"
+  },
+  "files": [
+    {
+      "path": "CURRENT",
+      "bytes": 17,
+      "sha256": "f8990350f16b6fb3aa2eaef9e9015d29c6b79d16ba19eebbc6d8fef7c5675bf2"
+    },
+    {
+      "path": "generation-vHHWf6/.managed.json",
+      "bytes": 1966,
+      "sha256": "fc97e386a32b43ab8aa8d89cc25b3d4ccb0212a82767adc2d6fb4670b33ff229"
+    },
+    {
+      "path": "generation-vHHWf6/0ec2802cd5cd4d4b85581ad8b75c404e.fast",
+      "bytes": 145,
+      "sha256": "5a1323b3153bb1e988496c8055d02a5f0e28d1650810c34815b648524e84dfa6"
+    },
+    {
+      "path": "generation-vHHWf6/0ec2802cd5cd4d4b85581ad8b75c404e.fieldnorm",
+      "bytes": 2933,
+      "sha256": "d33b4b1c1447caac96c388808a015d658b84acf94178f80dbd502a5b0c1ccbcc"
+    },
+    {
+      "path": "generation-vHHWf6/0ec2802cd5cd4d4b85581ad8b75c404e.idx",
+      "bytes": 998799,
+      "sha256": "c2e35f12d6753bac22eb08933c0f2788cabe2ff48b5d36d38c9f84d925c7259f"
+    },
+    {
+      "path": "generation-vHHWf6/0ec2802cd5cd4d4b85581ad8b75c404e.pos",
+      "bytes": 2177972,
+      "sha256": "698a0304a9b6d9aab9bfbc3449e2c31dd497c62a691852ac79e11e20cb9b0d8e"
+    },
+    {
+      "path": "generation-vHHWf6/0ec2802cd5cd4d4b85581ad8b75c404e.store",
+      "bytes": 35281,
+      "sha256": "77c94cc45d81eafe4e42523beb3db7eeff21310c6d02761c7f01eedf342f9890"
+    },
+    {
+      "path": "generation-vHHWf6/0ec2802cd5cd4d4b85581ad8b75c404e.term",
+      "bytes": 991424,
+      "sha256": "2e3d26e0701aff1f3e88804a75b7c433662dbc36dcd6cbde2fbd99c515f88594"
+    },
+    {
+      "path": "generation-vHHWf6/23e371d91bbf452285d30ba56deb3de7.fast",
+      "bytes": 145,
+      "sha256": "81cc9f52d1a402aac8977dd5a4957b97872004bea32e2f1dc19c02cfc15c4f57"
+    },
+    {
+      "path": "generation-vHHWf6/23e371d91bbf452285d30ba56deb3de7.fieldnorm",
+      "bytes": 86467,
+      "sha256": "d54003ab57bc847579e2a5d9bee90aed4c9ff31cc37148d7b2abc1479ba8f77f"
+    },
+    {
+      "path": "generation-vHHWf6/23e371d91bbf452285d30ba56deb3de7.idx",
+      "bytes": 29729802,
+      "sha256": "8e0ec32b68e5ab6b4d3297ea5504acda601107e0719ed79b082c5fab694db1c1"
+    },
+    {
+      "path": "generation-vHHWf6/23e371d91bbf452285d30ba56deb3de7.pos",
+      "bytes": 65384457,
+      "sha256": "db54966f12f3a5872b86cee7ee32888aed552e3e9c589d15af885e8aeaf4e5fd"
+    },
+    {
+      "path": "generation-vHHWf6/23e371d91bbf452285d30ba56deb3de7.store",
+      "bytes": 932072,
+      "sha256": "da1db0612efc576ed211c761dd69212a4851f2204acceccaf38315747b0bced8"
+    },
+    {
+      "path": "generation-vHHWf6/23e371d91bbf452285d30ba56deb3de7.term",
+      "bytes": 11267369,
+      "sha256": "85ae595c4156783138cc5a7e4f1a81904a899eb017391e7dfaab88bea1f31265"
+    },
+    {
+      "path": "generation-vHHWf6/33a4d661f7db434e8981d08a74c1f6a4.fast",
+      "bytes": 146,
+      "sha256": "af15af3ff8556915769a20417e3365bba53862d14e0473016ff89afd6c752ee6"
+    },
+    {
+      "path": "generation-vHHWf6/33a4d661f7db434e8981d08a74c1f6a4.fieldnorm",
+      "bytes": 4358,
+      "sha256": "ed390e3eba29f2e9d283f875e47de3764122f067fd0cb340317483863bdaa9d1"
+    },
+    {
+      "path": "generation-vHHWf6/33a4d661f7db434e8981d08a74c1f6a4.idx",
+      "bytes": 1323136,
+      "sha256": "bac7309d3302ba958046bd97bc16d9dfdf472939ec4b9f81c1954956a196247b"
+    },
+    {
+      "path": "generation-vHHWf6/33a4d661f7db434e8981d08a74c1f6a4.pos",
+      "bytes": 2752980,
+      "sha256": "767d1d42bc7bd6bfa3fe894adfc4c41f2c705a457b7678a4bee35d6c654b60e3"
+    },
+    {
+      "path": "generation-vHHWf6/33a4d661f7db434e8981d08a74c1f6a4.store",
+      "bytes": 45844,
+      "sha256": "1cb75a55b17cebf1b64f0e608d11a119bf3fb7d1aeec574c425aa8988067ff63"
+    },
+    {
+      "path": "generation-vHHWf6/33a4d661f7db434e8981d08a74c1f6a4.term",
+      "bytes": 1263478,
+      "sha256": "b2196d73c0f97b4af5a7f13508e4520f5b14da1007a5755c425afab05c4af1a9"
+    },
+    {
+      "path": "generation-vHHWf6/44153faca8f54ae9ba24dd3173706209.fast",
+      "bytes": 146,
+      "sha256": "db91f5db01570ab6065d6e420d6bde0ead1b931d6c8216f4ee2af63d0d241766"
+    },
+    {
+      "path": "generation-vHHWf6/44153faca8f54ae9ba24dd3173706209.fieldnorm",
+      "bytes": 86496,
+      "sha256": "ca50fa64076b46423573cfb28a115cf589253e68bc29bdb2d60149795f6ab375"
+    },
+    {
+      "path": "generation-vHHWf6/44153faca8f54ae9ba24dd3173706209.idx",
+      "bytes": 30021804,
+      "sha256": "467472d13b7a5b5dfefb6f9be344610a12d445810b0fbf5a3471c8c7ca38563d"
+    },
+    {
+      "path": "generation-vHHWf6/44153faca8f54ae9ba24dd3173706209.pos",
+      "bytes": 64990456,
+      "sha256": "1b05c3f3e319fd255f2f29c465afa8558d321a40020a8e313879e1c5fb7fad7b"
+    },
+    {
+      "path": "generation-vHHWf6/44153faca8f54ae9ba24dd3173706209.store",
+      "bytes": 924918,
+      "sha256": "61e752c965fa08445821fa27640e50cc03f2d65854665ae3a6ae565fa41ef71b"
+    },
+    {
+      "path": "generation-vHHWf6/44153faca8f54ae9ba24dd3173706209.term",
+      "bytes": 11702895,
+      "sha256": "8b8fc3c30075aef9cf18254b48e7a4bf040791cfe60dc3738b616064b55af8fa"
+    },
+    {
+      "path": "generation-vHHWf6/4f6771befb1b4c0fa40f0542f6e7ef17.fast",
+      "bytes": 146,
+      "sha256": "ad26e97de86720409de607770fad98bc8a3d9f289eaf34551bb616ee64e2dc89"
+    },
+    {
+      "path": "generation-vHHWf6/4f6771befb1b4c0fa40f0542f6e7ef17.fieldnorm",
+      "bytes": 15178,
+      "sha256": "5b506d419126d8c746a170b00e97f8d12b61ea6c8ce60ba939c47d07e5a16e9e"
+    },
+    {
+      "path": "generation-vHHWf6/4f6771befb1b4c0fa40f0542f6e7ef17.idx",
+      "bytes": 5641522,
+      "sha256": "85c1980bb2cd5e090e135abb6f9f751a0998a9b0e27a2f3ca2edbfa5d231333d"
+    },
+    {
+      "path": "generation-vHHWf6/4f6771befb1b4c0fa40f0542f6e7ef17.pos",
+      "bytes": 12557312,
+      "sha256": "bbdb27a779b4a10ab357cbd92ba6f0df07e5ecbb055672e52f6b16a3d57ce17a"
+    },
+    {
+      "path": "generation-vHHWf6/4f6771befb1b4c0fa40f0542f6e7ef17.store",
+      "bytes": 161982,
+      "sha256": "19e048fe622a9f8724bf7ddd2c00a18f12d6dcf327fccc0f3ce14e67d3407116"
+    },
+    {
+      "path": "generation-vHHWf6/4f6771befb1b4c0fa40f0542f6e7ef17.term",
+      "bytes": 3421136,
+      "sha256": "a66d35a325d06279a89519db0678c6b435e4b02b60ed300071c4ed25704d6956"
+    },
+    {
+      "path": "generation-vHHWf6/a76e9e3bb09a45c384520b679034318d.fast",
+      "bytes": 145,
+      "sha256": "531e884066e520c196451093fdd192d8d278eb0af39c5468fce73fe5a33aeb75"
+    },
+    {
+      "path": "generation-vHHWf6/a76e9e3bb09a45c384520b679034318d.fieldnorm",
+      "bytes": 16850,
+      "sha256": "dff93e5ddde2a326c0a637072cca72b44b1c2f70f231b92c05618c9ed145ddf8"
+    },
+    {
+      "path": "generation-vHHWf6/a76e9e3bb09a45c384520b679034318d.idx",
+      "bytes": 6411435,
+      "sha256": "0ad63a57340df55fc0b44fead0df3f523182d2631cbb46bc5ab906ad02bdb7c7"
+    },
+    {
+      "path": "generation-vHHWf6/a76e9e3bb09a45c384520b679034318d.pos",
+      "bytes": 14313532,
+      "sha256": "e8ad400465215ca414d324e575d99d646b08e4fc9ae4ee4b33691d8c280834b9"
+    },
+    {
+      "path": "generation-vHHWf6/a76e9e3bb09a45c384520b679034318d.store",
+      "bytes": 179060,
+      "sha256": "82f84c3d36046defb0f241a21db4d6d13795009d4748901b1ee897186681550c"
+    },
+    {
+      "path": "generation-vHHWf6/a76e9e3bb09a45c384520b679034318d.term",
+      "bytes": 3696553,
+      "sha256": "5018d4cde4fee6d0c65e1f6fba23f6487e808c01795074c2537a9b25e79770f6"
+    },
+    {
+      "path": "generation-vHHWf6/c0f756d574eb469db2a954fd1fc7f1f9.fast",
+      "bytes": 146,
+      "sha256": "5b8ddb603899d180cbb6a8d89481613df6b83bd145177e7e1e01dc62ccbb412b"
+    },
+    {
+      "path": "generation-vHHWf6/c0f756d574eb469db2a954fd1fc7f1f9.fieldnorm",
+      "bytes": 20597,
+      "sha256": "5f6ce4dfd6567916513f9fc6801ad876b7c28d6df323f3ec563f449239cd6fa3"
+    },
+    {
+      "path": "generation-vHHWf6/c0f756d574eb469db2a954fd1fc7f1f9.idx",
+      "bytes": 6499046,
+      "sha256": "43d99e50cf3fdd611e601a40e0fd2ec5d8f904827f38fb1e8453504e2fda8322"
+    },
+    {
+      "path": "generation-vHHWf6/c0f756d574eb469db2a954fd1fc7f1f9.pos",
+      "bytes": 13638752,
+      "sha256": "4793390e5ebcd407100136632eafb4098f18ff28fff31443bffa4d448ca3b1df"
+    },
+    {
+      "path": "generation-vHHWf6/c0f756d574eb469db2a954fd1fc7f1f9.store",
+      "bytes": 217147,
+      "sha256": "7db30c02f16ac6d8630cbb6aa13fcb58bd955444de75c213053197685d7571f3"
+    },
+    {
+      "path": "generation-vHHWf6/c0f756d574eb469db2a954fd1fc7f1f9.term",
+      "bytes": 4046030,
+      "sha256": "0940725f1fd2853d7059d5c22cb178a8ea6da805b4b4b923a0c22ebc4782b362"
+    },
+    {
+      "path": "generation-vHHWf6/d498fb8ed3964d64946d10a2e51d8ec9.fast",
+      "bytes": 145,
+      "sha256": "9f10464d928b50f07554e63776c9ccfbf58fbfe7937516f2b6a2c4fcb7ec1e74"
+    },
+    {
+      "path": "generation-vHHWf6/d498fb8ed3964d64946d10a2e51d8ec9.fieldnorm",
+      "bytes": 80728,
+      "sha256": "9691008743d5010a3742284901796c883dc6bfc38654abf9df92d1174510df49"
+    },
+    {
+      "path": "generation-vHHWf6/d498fb8ed3964d64946d10a2e51d8ec9.idx",
+      "bytes": 27969921,
+      "sha256": "21b458fcb0e8db1f41f7978879360ec598e0ec7081b03edbb77eeed18d6ae3ad"
+    },
+    {
+      "path": "generation-vHHWf6/d498fb8ed3964d64946d10a2e51d8ec9.pos",
+      "bytes": 66075697,
+      "sha256": "42cfa4f970d103f084ee8f6af9a04a2e3e5c4f07476fde872dec6902504760e2"
+    },
+    {
+      "path": "generation-vHHWf6/d498fb8ed3964d64946d10a2e51d8ec9.store",
+      "bytes": 808071,
+      "sha256": "b42cbcda8799306960d602517424ef849ca849be1bff5dbbbcf4baf79e25e142"
+    },
+    {
+      "path": "generation-vHHWf6/d498fb8ed3964d64946d10a2e51d8ec9.term",
+      "bytes": 10600047,
+      "sha256": "321c784c4116c10ad5f01aabb2f0a78f5dab03fa4fe07804f1f6b18260c9f226"
+    },
+    {
+      "path": "generation-vHHWf6/meta.json",
+      "bytes": 1870,
+      "sha256": "0259bf9b90bb78aeca9ee3b1bb799f510891f1b5206add66f0928b5e8dcb9810"
+    },
+    {
+      "path": "generation-vHHWf6/tonalli-meta.json",
+      "bytes": 470,
+      "sha256": "68927e15b95fe548f3305c9e58029af1eff18f5cf8d1560f7499ba3ea9b7ee11"
+    }
+  ],
+  "queries": [
+    {
+      "query": "solar system",
+      "hits": [
+        {
+          "title": "Solar viewer",
+          "url": "C/Solar_viewer"
+        },
+        {
+          "title": "Solar urticaria",
+          "url": "C/Solar_urticaria"
+        },
+        {
+          "title": "Solar erythema",
+          "url": "C/Solar_erythema"
+        },
+        {
+          "title": "Solar purpura",
+          "url": "C/Solar_purpura"
+        },
+        {
+          "title": "Safe Water System",
+          "url": "C/Safe_Water_System"
+        }
+      ]
+    },
+    {
+      "query": "photosynthesis",
+      "hits": [
+        {
+          "title": "Photosynthesis",
+          "url": "C/Photosynthesis"
+        },
+        {
+          "title": "Anoxygenic photosynthesis",
+          "url": "C/Anoxygenic_photosynthesis"
+        },
+        {
+          "title": "Oxygenic photosynthesis",
+          "url": "C/Oxygenic_photosynthesis"
+        },
+        {
+          "title": "Evolutionary origin of photosynthesis",
+          "url": "C/Evolutionary_origin_of_photosynthesis"
+        },
+        {
+          "title": "History of C3 : C4 photosynthesis research",
+          "url": "C/History_of_C3_:_C4_photosynthesis_research"
+        }
+      ]
+    },
+    {
+      "query": "Mexican history",
+      "hits": [
+        {
+          "title": "Mexican barbasco trade",
+          "url": "C/Mexican_barbasco_trade"
+        },
+        {
+          "title": "Mexican Red Cross",
+          "url": "C/Mexican_Red_Cross"
+        },
+        {
+          "title": "Mexican paradox",
+          "url": "C/Mexican_paradox"
+        },
+        {
+          "title": "Mexican Social Security Institute",
+          "url": "C/Mexican_Social_Security_Institute"
+        },
+        {
+          "title": "Mexican Health and Aging Study",
+          "url": "C/Mexican_Health_and_Aging_Study"
+        }
+      ]
+    }
+  ]
+}

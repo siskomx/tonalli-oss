@@ -1,0 +1,173 @@
+[package]
+name = "pmtiles"
+version = "0.28.0"
+edition = "2024"
+authors = ["Luke Seelenbinder <luke.seelenbinder@stadiamaps.com>", "Yuri Astrakhan <YuriAstrakhan@gmail.com>"]
+license = "MIT OR Apache-2.0"
+description = "Implementation of the PMTiles v3 spec with multiple sync and async backends."
+repository = "https://github.com/stadiamaps/pmtiles-rs"
+keywords = ["pmtiles", "gis", "geo"]
+categories = ["science::geo"]
+rust-version = "1.88"
+exclude = ["/fixtures"]
+
+[features]
+default = ["file-async-tokio", "iter"]
+aws-s3-async = ["__async-aws-s3"]
+file-async-tokio = ["tokio", "dep:rustix"]
+http-async = ["tokio", "dep:reqwest"]
+iter = ["dep:async-stream", "dep:futures-util"]
+mmap-async-tokio = ["tokio", "dep:memmap2", "tokio/fs"]
+moka = ["dep:moka"]
+s3-async-native = ["__async-s3", "__async-s3-nativetls"]
+s3-async-rustls = ["__async-s3", "__async-s3-rustls"]
+tokio = ["dep:tokio", "tokio/rt"]
+tilejson = ["dep:tilejson", "dep:serde", "dep:serde_json"]
+write = ["dep:twox-hash"]
+object-store = ["tokio", "dep:object_store"]
+brotli = ["dep:brotli"]
+zstd = ["dep:zstd"]
+
+# Forward some of the common features to reqwest dependency
+reqwest-default = ["reqwest?/default"]
+reqwest-native-tls = ["reqwest?/native-tls"]
+reqwest-rustls = ["reqwest?/rustls"]
+
+#### These features are for the internal usage only
+# This is a list of features we use in docs.rs, CI and other places where we want everything.
+# This list excludes these conflicting features: s3-async-native
+__all_non_conflicting = [
+    "aws-s3-async",
+    "file-async-tokio",
+    "http-async",
+    "iter",
+    "mmap-async-tokio",
+    "moka",
+    "s3-async-rustls",
+    "tilejson",
+    "write",
+    "object-store",
+    "brotli",
+    "zstd",
+]
+__async-s3 = ["tokio", "dep:rust-s3"]
+__async-s3-nativetls = ["rust-s3?/tokio-native-tls"]
+__async-s3-rustls = ["rust-s3?/tokio-rustls-tls"]
+__async-aws-s3 = ["tokio", "dep:aws-sdk-s3"]
+
+[package.metadata.docs.rs]
+features = ["__all_non_conflicting"]
+
+[dependencies]
+async-stream = { version = "0.3", optional = true }
+aws-sdk-s3 = { version = "1.49.0", optional = true }
+brotli = { version = ">=8.0.2, <10.0.0", optional = true }
+zstd = { version = ">=0.13, <0.15", optional = true }
+bytes = "1.10"
+fast_hilbert = "2.0.1"
+# zlib-rs decompresses gzip faster than the default miniz_oxide backend
+flate2 = { version = "1", default-features = false, features = ["zlib-rs"] }
+futures-util = { version = "0.3", optional = true }
+integer-encoding = "4.1"
+memmap2 = { version = "0.9.11", optional = true }
+moka = { version = "0.12", optional = true, features = ["future"] }
+object_store = { version = "0.14.0", optional = true, default-features = false, features = ["tokio"] }
+reqwest = { version = "0.13.1", default-features = false, optional = true }
+rust-s3 = { version = "0.38.0", optional = true, default-features = false, features = ["fail-on-err"] }
+serde = { version = "1", optional = true }
+serde_json = { version = "1", optional = true }
+thiserror = "2"
+tilejson = { version = "0.4", optional = true }
+tokio = { version = "1", default-features = false, optional = true }
+twox-hash = { version = "2.1", optional = true, default-features = false, features = ["std", "xxhash3_64", "xxhash3_128"] }
+
+# Reads cached file data without blocking
+[target.'cfg(target_os = "linux")'.dependencies]
+rustix = { version = "1", optional = true }
+
+[dev-dependencies]
+criterion = { version = "0.8", default-features = false, features = ["async_tokio", "cargo_bench_support"] }
+rstest = "0.28.0"
+tempfile = "3.13.0"
+tokio = { version = "1", features = ["test-util", "macros", "rt", "sync"] }
+
+# These do not build for wasm: the network backends' test servers, and the multi-threaded
+# runtime of the `local_file` benchmark
+[target.'cfg(not(target_family = "wasm"))'.dev-dependencies]
+mockito = "1"
+reqwest = { version = "0.13.1", features = ["rustls"] }
+tokio = { version = "1", features = ["rt-multi-thread"] }
+url = "2"
+
+# Evicts files from the page cache, to measure and test reads from disk
+[target.'cfg(target_os = "linux")'.dev-dependencies]
+rustix = { version = "1", features = ["fs"] }
+
+[[bench]]
+name = "directory_cache"
+harness = false
+required-features = ["moka", "write"]
+
+[[bench]]
+name = "local_file"
+harness = false
+required-features = ["file-async-tokio", "mmap-async-tokio", "write"]
+
+[lints.rust]
+# `deny` rather than `forbid`: the mmap backend must call the inherently-unsafe `Mmap::map`,
+# and opts in at that single site with an `#[expect(unsafe_code)]`. `forbid` cannot be
+# overridden anywhere, which would make a memory-mapped backend impossible to write.
+unsafe_code = "deny"
+missing_docs = "warn"
+unused_qualifications = "warn"
+
+[lints.clippy]
+# Restrictions
+absolute_paths = "warn"
+as_underscore = "warn"
+assertions_on_result_states = "warn"
+clone_on_ref_ptr = "warn"
+create_dir = "warn"
+dbg_macro = "warn"
+empty_drop = "warn"
+empty_structs_with_brackets = "warn"
+error_impl_error = "warn"
+exit = "warn"
+expect_used = "warn"
+filetype_is_file = "warn"
+format_push_string = "warn"
+indexing_slicing = "warn"
+lossy_float_literal = "warn"
+mem_forget = "warn"
+mixed_read_write_in_expression = "warn"
+multiple_unsafe_ops_per_block = "warn"
+negative_feature_names = "warn"
+panic = "warn"
+panic_in_result_fn = "warn"
+print_stderr = "warn"
+print_stdout = "warn"
+rc_buffer = "warn"
+rc_mutex = "warn"
+redundant_feature_names = "warn"
+redundant_test_prefix = "warn"
+redundant_type_annotations = "warn"
+rest_pat_in_fully_bound_structs = "warn"
+return_and_then = "warn"
+same_name_method = "warn"
+str_to_string = "warn"
+string_slice = "warn"
+todo = "warn"
+try_err = "warn"
+undocumented_unsafe_blocks = "warn"
+unimplemented = "warn"
+unnecessary_safety_doc = "warn"
+unnecessary_self_imports = "warn"
+unused_trait_names = "warn"
+unwrap_used = "warn"
+use_self = "warn"
+verbose_file_reads = "warn"
+wildcard_enum_match_arm = "warn"
+# Pedantics without being too noisy
+pedantic = { level = "warn", priority = -1 }
+module_name_repetitions = "allow"
+similar_names = "allow"

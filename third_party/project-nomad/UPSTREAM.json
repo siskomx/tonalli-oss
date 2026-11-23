@@ -1,0 +1,279 @@
+{
+  "repository": "https://github.com/Crosstalk-Solutions/project-nomad",
+  "revision": "c903da48c97bc02f5cdfeff2ebcde00a82dfec8e",
+  "license": "Apache-2.0",
+  "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC",
+  "license_sha256": "e4f125622d3c03c2ebd7caf0eb9f0e9a10029349f75b7e342699cb1a0c212aee",
+  "files": [
+    {
+      "original": "admin/inertia/components/chat/ChatInterface.tsx",
+      "original_sha256": "70948c8c6ee581634c4b6c3e7a1a4bbd9e5cdc67706cf3f6f542b88b1ab803cf",
+      "destination": "web-stub/src/features/chat/ChatInterface.jsx",
+      "adapted_sha256": "3e2666099e7968d7dbf6260b0104307d5fd4bb114b8b7f971c44338daf0df56a",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/components/chat/ChatMessageBubble.tsx",
+      "original_sha256": "24fb9eead3dd1acba5ea32f8265fc30333af5b17b2ce6d3f25a93c1a4a1f480a",
+      "destination": "web-stub/src/features/chat/ChatMessageBubble.jsx",
+      "adapted_sha256": "5688b21145a808f169b6181e3278c279a5b0915d8f96b118ea6d1f4bb854429f",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/components/chat/ChatAssistantAvatar.tsx",
+      "original_sha256": "3c03973a1931d372ce1d33e946addbd12320d7322920cf3b069c6b38e983b026",
+      "destination": "web-stub/src/features/chat/ChatAssistantAvatar.jsx",
+      "adapted_sha256": "007d986b03c0cf8d9d3421f188e2bf5fb3b96fe43ae6c6e0ca63e20aff878ae1",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/components/BouncingDots.tsx",
+      "original_sha256": "cf36097e8ff76e371b707390c011ae6bce0ed131f4a7727c7c40c08e679b83a3",
+      "destination": "web-stub/src/features/chat/BouncingDots.jsx",
+      "adapted_sha256": "455a77c2e3153716e1ed5637d9e795a50256e9256ac5a77bf46d58c0c966606f",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/components/chat/index.tsx",
+      "original_sha256": "f541bc22184cb0be3fbc38d5563c7a7632ef897a30117d2e8e60beb783b3f3da",
+      "destination": "web-stub/src/features/chat/Chat.jsx",
+      "adapted_sha256": "b6dc98e7f287230e836a79364ef180407644ec6291ac41a441aa4651dae5eb14",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/lib/api.ts",
+      "original_sha256": "a65a620c4918a00b4016e8fc87fbbccb4e83fe61f8f2b07b8be240fc669c462f",
+      "destination": "web-stub/src/features/chat/client.js",
+      "adapted_sha256": "e35afeb558002e15b36c728aeca4e90e16f59aaad76aac9e0b703d8c06e57b48",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/lib/chat_stream.ts",
+      "original_sha256": "d7ad212d8caf2bf94bc44a561a17502a92642a2184f6c48ab9ecca725b2cbd9a",
+      "destination": "web-stub/src/features/chat/chat_stream.js",
+      "adapted_sha256": "b8c8ede32598ba62850286c5497bc634844ee59708590860bdd5b7f559f5b341",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/lib/classNames.ts",
+      "original_sha256": "f35abead972823cfddf4f421e98b055baabeaba2d0d64a7696bda68a2faaf379",
+      "destination": "web-stub/src/ui/classNames.js",
+      "adapted_sha256": "68a089ac2015d8c62e44be0e00de6be0a3dbcb3a9f41b2257faf8d2a01c522b5",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/components/chat/stream_abort.ts",
+      "original_sha256": "360e782e85a6bdf78cb7cde516541dc49ba23b40e5c70ba54d32232eff3368da",
+      "destination": "web-stub/src/features/chat/stream_abort.js",
+      "adapted_sha256": "034a63d3fd9b9ce8ec0d9b5cbab1e425d54eb0f819780d05a0e41810079d61f2",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/app/utils/think_stream.ts",
+      "original_sha256": "6ad8c6d15de107a49c00f4f7c5643059561c92250b95e3f2a9a490afc3df289b",
+      "destination": "web-stub/src/features/chat/think_stream.js",
+      "adapted_sha256": "f43bdf897de1982c7eb984866416f03ccce01c5290053bcf8b763559f3ecf385",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/css/app.css",
+      "original_sha256": "3ab0334315f2de7a7142168c14de2d73e8b42f1888a4d3c6480ef5a0be13a519",
+      "destination": "web-stub/src/app/styles.css",
+      "adapted_sha256": "64f9cfcbc19cf18e2a643ebf550a2d1c48a9c48eeb4e50741ca4caa26e39d866",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/tests/unit/chat_stream_abort.spec.ts",
+      "original_sha256": "8d604d1fe89dc1cab9a41d7d15a40c8e2a35aff46bf09d15983ed37dc413c838",
+      "destination": "web-stub/tests/chat-abort-upstream.test.mjs",
+      "adapted_sha256": "c0c5e3d9b630093118cd77ddd31ea49b5d94f2655854563d780d7cb33a6e2452",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/tests/unit/think_stream.spec.ts",
+      "original_sha256": "f47bb5afaaa24f6c6b76cda91f4fbd2af0c299608bb223edcd15afbcc7285f9c",
+      "destination": "web-stub/tests/chat-think-upstream.test.mjs",
+      "adapted_sha256": "4536ed7f48578fef50c25cc411f74d87dd5d717598ec8f58f9ab8d21b7a5d261",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/tests/unit/chat_stream.spec.ts",
+      "original_sha256": "30afbdb83d5f75522bf63671b54735f555c04cf428f8405d89a916b682804caa",
+      "destination": "web-stub/tests/chat-stream-upstream.test.mjs",
+      "adapted_sha256": "17733a3f43805e184126d3804d539e6f0e745dae8c94d3f834038b2f3bd321a1",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/components/inputs/Input.tsx",
+      "original_sha256": "8d3ff91292ca88f7bcaba172223310a583a98db8d9a4d9d480f0287649c71da4",
+      "destination": "web-stub/src/ui/Input.jsx",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC",
+      "adapted_sha256": "994780aaeafe2f80b15a30789a91b449107b8f861eab25d968e16967ffff3348"
+    },
+    {
+      "original": "admin/inertia/components/inputs/Select.tsx",
+      "original_sha256": "5e6b283a2227be076d8961f6d8a6918a8df8ebc580717215a46e1c8a6dec95a2",
+      "destination": "web-stub/src/ui/Select.jsx",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC",
+      "adapted_sha256": "b61f1cdf39d68539dcdf0877b159be915d18243d260b557f061d781e58428386"
+    },
+    {
+      "original": "admin/inertia/components/WikipediaSelector.tsx",
+      "original_sha256": "7a8c61acc9d899a4476bb718a4b74a58512b2ef7768b158a9de7d69dab957944",
+      "destination": "web-stub/src/features/content/ContentSelector.jsx",
+      "adapted_sha256": "58ea657fe5f32052ef204765dc5861cfe5e5d8932b66a9e1f5e98def0fffd58e",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/components/ActiveDownloads.tsx",
+      "original_sha256": "513af59c258a36297a73323b9e09f63d986ff03dfc9eaafb544aa83593a665bf",
+      "destination": "web-stub/src/features/content/ActiveDownloads.jsx",
+      "adapted_sha256": "ec028b2670a26c0827e2f60591b23c6516f4ac7d80e463c211dd76bb45ea8f45",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/components/StorageProjectionBar.tsx",
+      "original_sha256": "71a871829cfd0ee48f6c3b58d65e262ca86cbf9c2f863da61d8053968129d179",
+      "destination": "web-stub/src/features/content/StorageProjectionBar.jsx",
+      "adapted_sha256": "2bea6cb0a729d8c625ac58e55fb24af7c51a24915145f9cff44eb6ad0fcb413f",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/hooks/useDownloads.ts",
+      "original_sha256": "9564d468ae829d2e3166d03d63177791777f5b5a03f50700e2abb6eadaac7af5",
+      "destination": "web-stub/src/features/content/useDownloads.js",
+      "adapted_sha256": "44e323fceab32d268f2f1d9cda195b994358de04843cd02051dd734b1e5ca542",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/lib/util.ts",
+      "original_sha256": "f00ecbf9317acf96740cb2e58147a37b5d1909c5b414659cba338a60e861eb60",
+      "destination": "web-stub/src/features/content/format.js",
+      "adapted_sha256": "517ca538188522c18b4ddceedc2d7b7dd8b31333ee6e34ff3b49380abd3b2142",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/components/drug-reference/IngestStatus.tsx",
+      "original_sha256": "e2fdf6ad48750b4056d8d28d044a3d67351a8de846d081de382de6d8f0e36876",
+      "destination": "web-stub/src/features/library/SearchPreparationView.js",
+      "adapted_sha256": "68c34fe6fa1e88302f5a2fcf52decf340a83629aebff8893f8c1051ea3c87d1e",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/components/StyledSidebar.tsx",
+      "original_sha256": "68388042a119c8a4bef73533f5ff933e5ad78f89eb2bf0cafbda1ec666c1f2f3",
+      "destination": "web-stub/src/app/AppLayout.jsx",
+      "adapted_sha256": "125be9bbb36a8f00d6a90edf12a60ea37720f84022c2b76dc7029c3c236e1c27",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/layouts/AppLayout.tsx",
+      "original_sha256": "338806114ec6320db1ac58a66b219ce1e791f5dca1ccaa87e7d1a1d5fef3c675",
+      "destination": "web-stub/src/app/AppLayout.jsx",
+      "adapted_sha256": "125be9bbb36a8f00d6a90edf12a60ea37720f84022c2b76dc7029c3c236e1c27",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/layouts/SettingsLayout.tsx",
+      "original_sha256": "7de37f724b42651fa8e91070f5b0f3677e2c236e95087813ed6ccf35ac9dd33c",
+      "destination": "web-stub/src/app/AppLayout.jsx",
+      "adapted_sha256": "125be9bbb36a8f00d6a90edf12a60ea37720f84022c2b76dc7029c3c236e1c27",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/components/CountryPickerModal.tsx",
+      "original_sha256": "9578ffe469fc8eb005945edd2dfd40b48cf727c895859c8305cba3ca0713e813",
+      "destination": "web-stub/src/features/map/CountryPicker.jsx",
+      "adapted_sha256": "ef7a8e7b611b346824eb9cd80652e66af0d7445660944b08cb3e4df1f7b4e72d",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/app/services/countries_service.ts",
+      "original_sha256": "99932097f71b186ddc5129197b91ea611f65e1307affde78637d80cbc38cf05a",
+      "destination": "native/maps-extract/countries/buffer.ts",
+      "adapted_sha256": "056cf7b285a09027f8d49242ae0898085fdffc4ef130baf5928b2aae94282469",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/hooks/useTheme.ts",
+      "original_sha256": "b696a0b00125b23ab1e4ae1720deae8ea2c86ecd7141c2ab26fd790304d094f0",
+      "destination": "web-stub/src/app/useTheme.js",
+      "adapted_sha256": "506830e67db16dd67a8138b067872dda9fb0192adf8fc04fce33e4c8703ecfcd",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/components/file-uploader/index.tsx",
+      "destination": "web-stub/src/features/files/FileUploader.jsx",
+      "original_sha256": "21ce22d9d4bba8d2e97c3ba02a2ce212d529a9ebb7b735df96f5110043735fdb",
+      "adapted_sha256": "3740b968fee7078fe7b4ea578ea9c15ff526ab98900d70ef06ed60c30824f9b9",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/components/file-uploader/index.css",
+      "destination": "web-stub/src/features/files/uploader.css",
+      "original_sha256": "7f57cb0e6765aff5043e22af621b949c8acdec6b0bd3d8066fd7e55dbff33007",
+      "adapted_sha256": "92b01d48f62d2e5885f1710ca2ad78b4d641754983a72490e17af53c22d62a2c",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/pages/settings/models.tsx",
+      "original_sha256": "ce1c97084861d9cfd9ef15151317148e1a40333bbd59238dd119e00ff2fe2298",
+      "destination": "web-stub/src/features/chat/ModelSettings.jsx",
+      "adapted_sha256": "04714f7df4eb5c51a852b8bf309a51de9c7c21479fe2bbca7b43125d60f32451",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/components/chat/ChatSidebar.tsx",
+      "original_sha256": "19f6418cc57f7ffd2ba3943f70c918b87b40b89977481f28b0815ea4a0ff98df",
+      "destination": "web-stub/src/features/chat/ConversationHistory.jsx",
+      "adapted_sha256": "512fdbe6f7a5bd340787ed7cc440e925a819c30cce1f8771c6d905333afe7607",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    },
+    {
+      "original": "admin/inertia/components/chat/index.tsx",
+      "original_sha256": "f541bc22184cb0be3fbc38d5563c7a7632ef897a30117d2e8e60beb783b3f3da",
+      "destination": "web-stub/src/features/chat/useHistory.js",
+      "adapted_sha256": "ebaa6e0e2f2201da8af7a2b66578f31ba674591a7273936348cf13d9fd53f081",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2024-2026 Crosstalk Solutions LLC"
+    }
+  ],
+  "notes": [
+    "Adapted source file provenance is filled as each integration is verified.",
+    "NOMAD branding and server/Docker coupling are not carried into product UI.",
+    "Evaluation corpus has per-file exceptions; no blanket Apache license claim for corpus assets.",
+    "No Jcorp CC BY-NC-SA source is copied."
+  ]
+}

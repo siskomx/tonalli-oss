@@ -1,0 +1,22 @@
+# Terminal spike example. Copy outside source checkouts before enabling it.
+# All REPLACE_ values are deliberately fake. No radio is selected by default.
+enabled = false
+
+[radio]
+transport = "serial" # serial or ble; BLE requires the ble build feature
+selector = "REPLACE_WITH_SELECTED_DEVICE"
+lock_directory = "REPLACE_WITH_ABSOLUTE_PRIVATE_DIRECTORY"
+baud = 115200
+dtr = false
+rts = false
+connect_timeout_seconds = 10
+config_timeout_seconds = 30
+receive_timeout_seconds = 60
+max_nodes = 1024
+max_config_events = 8192
+accepted_firmware = []
+# channel_index must be selected from the discovered enabled channels before TX.
+
+[spike]
+# text must be provided explicitly, outside the repository, before a send test.
+show_test_text = false

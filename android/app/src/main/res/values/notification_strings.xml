@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notifications_settings_failed">Open your phone settings, choose Apps, then Tonalli, then Notifications.</string>
+</resources>

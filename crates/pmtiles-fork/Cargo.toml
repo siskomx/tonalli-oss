@@ -1,0 +1,29 @@
+[package]
+name = "pmtiles"
+version = "0.28.0"
+edition = "2024"
+rust-version = "1.88"
+license = "MIT OR Apache-2.0"
+authors = ["Luke Seelenbinder <luke.seelenbinder@stadiamaps.com>", "Yuri Astrakhan <YuriAstrakhan@gmail.com>"]
+repository = "https://github.com/stadiamaps/pmtiles-rs"
+description = "Tonalli's bounded reader fork of pmtiles 0.28.0"
+
+[features]
+default = []
+
+[dependencies]
+bytes = "=1.12.1"
+fast_hilbert = "=2.1.0"
+flate2 = { version = "=1.1.10", default-features = false, features = ["zlib-rs"] }
+integer-encoding = "=4.1.0"
+thiserror = "=2.0.21"
+
+[dev-dependencies]
+rstest = "=0.28.0"
+tempfile = "=3.23.0"
+tokio = { version = "=1.54.1", features = ["macros", "rt", "sync"] }
+
+[lints.rust]
+# Retained upstream conditional source is auditable, but these optional backends,
+# writers, caches and codecs are deliberately unavailable in this reader fork.
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(feature, values("__all_non_conflicting", "__async-aws-s3", "__async-s3", "aws-s3-async", "file-async-tokio", "http-async", "iter", "mmap-async-tokio", "moka", "object-store", "tilejson", "tokio", "write", "brotli", "zstd"))'] }

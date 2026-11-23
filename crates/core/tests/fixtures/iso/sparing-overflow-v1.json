@@ -1,0 +1,13 @@
+{
+  "file": "sparing-overflow-v1.udf",
+  "bytes": 667648,
+  "sha256": "cd02037ce12b1605abc4b0fb8ab2453315daca73d8a6b68c1cc19c9a28ff75f8",
+  "purpose": "Synthetic mixed physical/virtual/sparable maps exercise a large intermediate but valid bounded final address. The parser must return the exact payload without overflowing.",
+  "source": "libmkiso 0.1.5 published MIT-licensed UDF fixture helpers, with a focused Tonalli arithmetic-boundary regression",
+  "upstream_commit": "e5d8e75bbf9dd5dd33c0c6b12a9a0686efe916e9",
+  "generator": "crates/libmkiso-fork/tests/udf_profiles.rs::small_mixed_virtual_sparable_geometry_is_panic_free",
+  "export_environment": "TONALLI_UDF_OVERFLOW_FIXTURE_OUT",
+  "generator_receipt": "crates/libmkiso-fork/tests/fixtures/sparing-overflow-small.json",
+  "license": "MIT; see crates/libmkiso-fork/LICENSE and FORK.md",
+  "note": "The authored fixture omits VRS, so the core regression invokes the public UdfReader directly as well as the Tonalli facade to exercise the vulnerable mapping branch. It is not a valid producer-conformance fixture."
+}

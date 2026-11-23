@@ -1,0 +1,587 @@
+manifest_version = 1
+
+[[test_fixtures]]
+id = "llama-cpp-2-bert-bge-vocabulary"
+kind = "gguf-vocabulary"
+license = "MIT OR Apache-2.0"
+version = "llama-cpp-2-0.1.161-e7af607ebd5ec2932709ef918c17cca2f9b0fce4"
+source_path = "crates/llama-cpp-2-fork/src/gguf/ggml-vocab-bert-bge.gguf"
+source_url = "https://github.com/utilityai/llama-cpp-rs/blob/e7af607ebd5ec2932709ef918c17cca2f9b0fce4/llama-cpp-2/src/gguf/ggml-vocab-bert-bge.gguf"
+bytes = 627549
+sha256 = "fbcbe22278fb302694d5f4a41bfe48c5f90e8e3554eab1c0435387dff654a854"
+provenance = "Unchanged vocabulary-only fixture from the published wrapper crate, covered by its declared dual license and retained notices. Byte hash checked locally; used by upstream GGUF/tokenizer unit tests, not an inference model or phone benchmark input."
+
+[[packs]]
+id = "qwen3-1.7b-q4-k-m"
+kind = "gguf"
+role = "generation"
+license = "Apache-2.0"
+version = "daeb8e2d528a760970442092f6bf1e55c3b659eb"
+url = "https://huggingface.co/ggml-org/Qwen3-1.7B-GGUF/resolve/daeb8e2d528a760970442092f6bf1e55c3b659eb/Qwen3-1.7B-Q4_K_M.gguf"
+bytes = 1282439264
+sha256 = "d2387ca2dbfee2ffabce7120d3770dadca0b293052bc2f0e138fdc940d9bc7b5"
+path = "packs/ai/Qwen3-1.7B-Q4_K_M.gguf"
+deferred = true
+provenance = "Immutable ggml-org conversion of Qwen3-1.7B; Apache-2.0 original model. Publisher LFS bytes/SHA256 and local streaming download verification match on 2026-11-11; checked downloader activated only after SHA256 success (target/ai-fetch-qwen17-r1/result.json, 892.571s). This Q4 conversion is not Qwen's own GGUF repository (which currently offers 1.7B Q8_0 only). Optional models stay excluded from bulk --all; explicit id selects acquisition. No inference or phone gate claimed."
+
+[[packs]]
+id = "qwen3-4b-q4-k-m"
+kind = "gguf"
+role = "generation"
+license = "Apache-2.0"
+version = "bc640142c66e1fdd12af0bd68f40445458f3869b"
+url = "https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/bc640142c66e1fdd12af0bd68f40445458f3869b/Qwen3-4B-Q4_K_M.gguf"
+bytes = 2497280256
+sha256 = "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+path = "packs/ai/Qwen3-4B-Q4_K_M.gguf"
+deferred = true
+provenance = "Immutable official Qwen GGUF; publisher LFS bytes/SHA256 and local streaming download verification match on 2026-11-11; checked downloader activated only after SHA256 success (target/ai-fetch-qwen4-r1/result.json, 245.458s). Optional models are excluded from bulk --all. RAM tier and actual available memory govern model offers/admission, never app access. No 4B inference or phone gate claimed."
+
+[[packs]]
+id = "bge-small-en-v1.5-q8-0"
+kind = "gguf"
+role = "embedding"
+language = "en"
+license = "MIT"
+version = "f2068edd9b54f2a369549ccc71f70ed273a2a801"
+url = "https://huggingface.co/ggml-org/bge-small-en-v1.5-Q8_0-GGUF/resolve/f2068edd9b54f2a369549ccc71f70ed273a2a801/bge-small-en-v1.5-q8_0.gguf"
+bytes = 36685152
+sha256 = "f046db1dc724cf4f6f0a0c5917e922823b73eb1d27b8f9a9c2797f7866974804"
+path = "packs/ai/bge-small-en-v1.5-q8_0.gguf"
+deferred = true
+provenance = "Immutable ggml-org conversion of MIT BAAI/bge-small-en-v1.5; publisher LFS bytes/SHA256 and local streaming download verification match on 2026-11-11; checked downloader activated only after SHA256 success (target/ai-fetch-bge-r1/result.json, 4.798s). Upstream specifies 384 dimensions, CLS pooling, 512-token inputs and a retrieval-query prefix. No embedding or quality result claimed. English reranking evidence does not establish Spanish quality. Optional model excluded from bulk --all."
+
+[[packs]]
+id = "gemma-4-e2b-it-litert-lm"
+kind = "litertlm"
+role = "generation"
+license = "Apache-2.0"
+version = "2d74ac41a33d7da82f39f7d5720a04c68514a103"
+url = "https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm/resolve/2d74ac41a33d7da82f39f7d5720a04c68514a103/gemma-4-E2B-it.litertlm"
+bytes = 2588147712
+sha256 = "181938105e0eefd105961417e8da75903eacda102c4fce9ce90f50b97139a63c"
+path = "packs/ai/gemma-4-E2B-it.litertlm"
+deferred = true
+provenance = "User-authorized bounded optional CPU comparison, preserving Qwen. Google deployment guide links this LiteRT Community artifact; immutable HF API reports exact bytes/SHA. Publisher declares Apache-2.0. Checked downloader verified full SHA before atomic activation on 2026-11-12 (target/ai-fetch-gemma4-e2b-r1/result.json, 230.217s); Pixel runtime remains pending. Not GGUF or input to the Rust llama.cpp loader; never infer GGUF/total-app RAM from LiteRT model-card figures. Native LiteRT may mmap, so only a verified immutable copy in internal app storage may be loaded. Excluded from bulk --all; explicit selected acquisition only."
+
+[[packs]]
+id = "wikipedia-en-knots"
+kind = "zim"
+language = "en"
+version = "2026-10"
+url = "https://ftp.nluug.nl/pub/kiwix/zim/wikipedia/wikipedia_en_knots_maxi_2026-10.zim"
+bytes = 14093352
+sha256 = "29a3ffa52a725d0ef9dd5359d27b864ec8454c61430c0bfb15fd1929f4b73390"
+path = "packs/wikipedia_en_knots_maxi_2026-10.zim"
+checksum_url = "https://download.kiwix.org/zim/wikipedia/wikipedia_en_knots_maxi_2026-10.zim.meta4"
+provenance = "Kiwix publisher metalink size and SHA-256; Range bytes=0-95 returned HTTP 206 and ZIM magic on 2026-11-11. CLI download from this publisher-listed NLUUG mirror verified against publisher SHA-256 on 2026-11-11. Original download.kiwix.org redirected to Wikimedia and returned 403; mirror.download.kiwix.org was too slow."
+
+[[packs]]
+id = "wikipedia-es-climate-change"
+kind = "zim"
+language = "es"
+version = "2026-10"
+url = "https://ftp.nluug.nl/pub/kiwix/zim/wikipedia/wikipedia_es_climate-change_maxi_2026-10.zim"
+bytes = 61576021
+sha256 = "56a6ec0072e15206475b2c6ab79a389ecb7508079f1b9dae36c187c87631a4d3"
+path = "packs/wikipedia_es_climate-change_maxi_2026-10.zim"
+checksum_url = "https://download.kiwix.org/zim/wikipedia/wikipedia_es_climate-change_maxi_2026-10.zim.meta4"
+provenance = "Kiwix publisher metalink size and SHA-256; Range bytes=0-95 returned HTTP 206 and ZIM magic on 2026-11-11. Maxi chosen for image/CSS reader checks. CLI download from this publisher-listed NLUUG mirror verified against publisher SHA-256 on 2026-11-11. Original download.kiwix.org redirected to Wikimedia and returned 403; mirror.download.kiwix.org was too slow."
+
+[[packs]]
+id = "wikipedia-en-all-nopic"
+kind = "zim"
+language = "en"
+version = "2026-06"
+url = "https://ftp.nluug.nl/pub/kiwix/zim/wikipedia/wikipedia_en_all_nopic_2026-06.zim"
+bytes = 52690706555
+sha256 = "441a56d9e05b2d98f8ae9acb7986a513ed47904d73852c92dc6b7d50baa122e5"
+path = "packs/wikipedia_en_all_nopic_2026-06.zim"
+checksum_url = "https://download.kiwix.org/zim/wikipedia/wikipedia_en_all_nopic_2026-06.zim.meta4"
+provenance = "Full English nopic benchmark; publisher metalink size and SHA-256 rechecked on 2026-11-11. NLUUG is listed in the official metalink. Later local streaming SHA-256 verification matched (target/react-full-wiki-verified.json); unchanged strong source identity was checked through the successful third full-index build on 2026-11-12. Earlier download/build failures remain recorded in RESULTS. deferred remains true to exclude this large pack from --all."
+deferred = true
+
+[[packs]]
+id = "wikipedia-en-medicine-nopic"
+kind = "zim"
+language = "en"
+version = "2026-10"
+url = "https://ftp.nluug.nl/pub/kiwix/zim/wikipedia/wikipedia_en_medicine_nopic_2026-10.zim"
+bytes = 1047708415
+sha256 = "718fadad40b3491be3fa8f95181a948e4d726f97a79a14e0ef1b90c6b2b03625"
+path = "packs/wikipedia_en_medicine_nopic_2026-10.zim"
+checksum_url = "https://download.kiwix.org/zim/wikipedia/wikipedia_en_medicine_nopic_2026-10.zim.meta4"
+provenance = "Mid-size phone fallback candidate. Canonical source: https://download.kiwix.org/zim/wikipedia/wikipedia_en_medicine_nopic_2026-10.zim . Kiwix publisher metalink size/SHA-256 checked on 2026-11-12; NLUUG is publisher-listed. Existing verified downloader and independent local SHA-256 both match (target/medicine-fetch-r1/result.json, 146.541s whole acquisition). Bounded archive metadata identifies WikiMed Medical Encyclopedia, Wikipedia/openZIM, source en.wikipedia.org, date 2026-10-10 and nopic; no License metadata field exists. Exact bundled attribution/license inspection remains open; no blanket asset license asserted. deferred excludes this optional dataset from --all; explicit id selects it."
+deferred = true
+
+[[packs]]
+id = "map-mx-mexico-city-z8"
+kind = "pmtiles"
+country = "MX"
+version = "4.15.2-20261110-z8"
+bytes = 579622
+sha256 = "9a8d7ef3570d5cebd4e3ad24dd25ea88b22e578520dd19fbb9058c0248ab5238"
+path = "packs/mx-mexico-city-z8.pmtiles"
+bounds = [-99.20, 19.38, -99.10, 19.48]
+min_zoom = 0
+max_zoom = 8
+source_url = "https://build.protomaps.com/20261110.pmtiles"
+provenance = "Locally derived on 2026-11-11 with official pmtiles 1.31.2; command: pmtiles extract SOURCE packs/mx-mexico-city-z8.pmtiles --bbox=-99.20,19.38,-99.10,19.48 --maxzoom=8. Actual local SHA-256 and bytes recorded; pmtiles verify passed. No remotely hosted cutout URL claimed."
+
+[[packs]]
+id = "map-us-san-diego-z8"
+kind = "pmtiles"
+country = "US"
+version = "4.15.2-20261110-z8"
+bytes = 573529
+sha256 = "056249419246ceadc38991b8f40e1fbf073b22c13b856724ff1301b086d18fb4"
+path = "packs/us-san-diego-z8.pmtiles"
+bounds = [-117.20, 32.68, -117.10, 32.78]
+min_zoom = 0
+max_zoom = 8
+source_url = "https://build.protomaps.com/20261110.pmtiles"
+provenance = "Locally derived on 2026-11-11 with official pmtiles 1.31.2; command: pmtiles extract SOURCE packs/us-san-diego-z8.pmtiles --bbox=-117.20,32.68,-117.10,32.78 --maxzoom=8. Actual local SHA-256 and bytes recorded; pmtiles verify passed. No remotely hosted cutout URL claimed."
+
+[[packs]]
+id = "map-ca-montreal-z8"
+kind = "pmtiles"
+country = "CA"
+version = "4.15.2-20261110-z8"
+bytes = 780083
+sha256 = "6a152c16ad463083c8d1987d3ead4faa150816feb9d0b934ea0910970183f867"
+path = "packs/ca-montreal-z8.pmtiles"
+bounds = [-73.62, 45.46, -73.52, 45.56]
+min_zoom = 0
+max_zoom = 8
+source_url = "https://build.protomaps.com/20261110.pmtiles"
+provenance = "Locally derived on 2026-11-11 with official pmtiles 1.31.2; command: pmtiles extract SOURCE packs/ca-montreal-z8.pmtiles --bbox=-73.62,45.46,-73.52,45.56 --maxzoom=8. Actual local SHA-256 and bytes recorded; pmtiles verify passed. No remotely hosted cutout URL claimed."
+
+[[packs]]
+id = "iso-small-zim"
+kind = "iso"
+version = "2026-11-11"
+bytes = 14469120
+sha256 = "6c78186beb28a270411983ff0fad306cc6a57a7883b778366672959107ab1893"
+path = "packs/small-zim-20261111.iso"
+source_pack = "wikipedia-en-knots"
+provenance = "Locally generated with GNU xorriso 1.5.8.pl02, ISO9660 with Joliet and Rock Ridge: xorriso -as mkisofs -R -J -o docs/spike/packs/small-zim-20261111.iso docs/spike/packs/iso-stage. Contains /fixture.zim copied from the CLI-verified English ZIM. xorriso extraction matched the source SHA-256; Tonalli ISO parsing is not implemented yet."
+
+[pending]
+map_rendering = "Windows Edge rendered MX, US and CA alone and MX plus CA together, with labels, sprite icons and credits; zero external attempts with non-loopback traffic denied. See map-validation.md. Android WebView and whole-country coverage remain unproven."
+
+[map_source]
+url = "https://build.protomaps.com/20261110.pmtiles"
+version = "4.15.2"
+bytes = 139416504818
+blake3 = "402cf3e34299f3c2ff7a6e6865700d59981683e9c5deb19b77d13e1596fc8175"
+metadata_url = "https://build-metadata.protomaps.dev/builds.json"
+provenance = "Official build metadata and HTTP 206 bytes=0-126 probe, 2026-11-11. Parent archive not downloaded; upstream BLAKE3 not locally verified. Daily URL retention is limited."
+assets_commit = "028c18f713baecad011301ff7a69acc39bcc2ae7"
+assets_repository = "https://github.com/protomaps/basemaps-assets"
+
+[[packs]]
+id = "map-assets-protomaps-light"
+kind = "map-assets"
+version = "028c18f713baecad011301ff7a69acc39bcc2ae7-light-basemaps5.7.0"
+bytes = 19875840
+sha256 = "23fbb1617402f47e71f750caee861c04c92961efcf991eb6c3d4902825e158f9"
+path = "packs/map-assets-028c18f7.tar"
+source_url = "https://codeload.github.com/protomaps/basemaps-assets/tar.gz/028c18f713baecad011301ff7a69acc39bcc2ae7"
+provenance = "Locally generated with scripts/prepare-map-assets.py; not a remotely hosted Tonalli archive. Upstream source archive SHA-256 locally measured as 57e40e8c512bd8042d0a3a251f19d0d1c8523ad963c666c3c6643bada4dc92d0. Selected Git blob hashes verified, font symlinks safely materialized, all components verified on fresh extraction before publication. Two independent preparations produced the same fixed-metadata sorted TAR. Exact component URLs, bytes, SHA-256 and license provenance are in map-assets.toml; no publisher-signed hash claimed."
+
+[[test_fixtures]]
+id = "article-benign"
+kind = "zim"
+license = "GPL-3.0-or-later"
+version = "v1-python-libzim-4.1.0-native-9.8.2"
+source_path = "crates/core/tests/fixtures/articles/benign-v1.zim"
+source_url = "repo:scripts/make-article-fixtures.py"
+bytes = 300587
+sha256 = "863303d2ebbe3ac36549346173f6dc4d3b361f633a6912aa41efbef781c6b340"
+provenance = "Original tracked sources; official verified Windows libzim 4.1.0 wheel; no compression/indexing, one worker. UUID-dependent bytes; see article-fixtures.md and fixture manifest.json."
+
+[[test_fixtures]]
+id = "article-hostile"
+kind = "zim"
+license = "GPL-3.0-or-later"
+version = "v1-python-libzim-4.1.0-native-9.8.2"
+source_path = "crates/core/tests/fixtures/articles/hostile-v1.zim"
+source_url = "repo:scripts/make-article-fixtures.py"
+bytes = 40028
+sha256 = "0eabaa27e1e333f564bb1da3f632ab05303c16c929d0832f5886f20819211fd5"
+provenance = "Original tracked passive/combined/separate attack pages; official verified Windows libzim 4.1.0 wheel; UUID-dependent bytes, no remote archive URL."
+
+[[test_fixtures]]
+id = "iso-plain-fixture"
+kind = "iso"
+license = "GPL-3.0-or-later"
+version = "v1-xorriso-1.5.8.pl02"
+source_path = "crates/core/tests/fixtures/iso/plain-v1.iso"
+source_url = "repo:docs/spike/make-iso-fixtures.ps1"
+bytes = 675840
+sha256 = "30130f4dfef2d406a228cdec8d129f254db80449d1f8edcdaa9ad6310d833bc5"
+provenance = "Locally authored original fixture; pycdlib 1.22.0 + xorriso extraction verified payload. Exact namespace/extent details and native UDF metadata nondeterminism are recorded in crates/core/tests/fixtures/iso/manifest.json. No remote archive URL or passing Tonalli ISO gate claimed."
+
+[[test_fixtures]]
+id = "iso-joliet-fixture"
+kind = "iso"
+license = "GPL-3.0-or-later"
+version = "v1-xorriso-1.5.8.pl02"
+source_path = "crates/core/tests/fixtures/iso/joliet-v1.iso"
+source_url = "repo:docs/spike/make-iso-fixtures.ps1"
+bytes = 675840
+sha256 = "d3bae65671a72e3f1184cdcb918914dc474d4d1275dc40240e4db1efcb378000"
+provenance = "Locally authored original fixture; pycdlib 1.22.0 + xorriso extraction verified payload. Exact namespace/extent details and native UDF metadata nondeterminism are recorded in crates/core/tests/fixtures/iso/manifest.json. No remote archive URL or passing Tonalli ISO gate claimed."
+
+[[test_fixtures]]
+id = "iso-rock-ridge-fixture"
+kind = "iso"
+license = "GPL-3.0-or-later"
+version = "v1-xorriso-1.5.8.pl02"
+source_path = "crates/core/tests/fixtures/iso/rock-ridge-v1.iso"
+source_url = "repo:docs/spike/make-iso-fixtures.ps1"
+bytes = 675840
+sha256 = "5cca2c0216a7f7852902bce7780e3c92587cadce30fde0185bca20ef28684010"
+provenance = "Locally authored original fixture; pycdlib 1.22.0 + xorriso extraction verified payload. Exact namespace/extent details and native UDF metadata nondeterminism are recorded in crates/core/tests/fixtures/iso/manifest.json. No remote archive URL or passing Tonalli ISO gate claimed."
+
+[[test_fixtures]]
+id = "iso-udf-fixture"
+kind = "iso"
+license = "GPL-3.0-or-later"
+version = "v1-imapi2fs-10.0.26100.1"
+source_path = "crates/core/tests/fixtures/iso/udf-v1.iso"
+source_url = "repo:docs/spike/make-iso-fixtures.ps1"
+bytes = 1441792
+sha256 = "e1462d9925d95069e714a41cad70d265d87014ff295e1c4f3a85e8dec924b37d"
+provenance = "Locally authored original fixture; Windows UDF read-only Mount-DiskImage verified payload. Exact namespace/extent details and native UDF metadata nondeterminism are recorded in crates/core/tests/fixtures/iso/manifest.json. No remote archive URL or passing Tonalli ISO gate claimed."
+
+[[test_fixtures]]
+id = "iso-multi-fixture"
+kind = "iso"
+license = "GPL-3.0-or-later"
+version = "v1-authored-iso9660-level3"
+source_path = "crates/core/tests/fixtures/iso/multi-v1.iso"
+source_url = "repo:docs/spike/make-iso-fixtures.ps1"
+bytes = 131072
+sha256 = "4d4f162a2d747dbfe3b87c96cc455e505045217e14a80c8c6e65db327755eb18"
+provenance = "Locally authored original fixture; pycdlib 1.22.0 + xorriso extraction verified payload. Exact namespace/extent details and native UDF metadata nondeterminism are recorded in crates/core/tests/fixtures/iso/manifest.json. No remote archive URL or passing Tonalli ISO gate claimed."
+
+[[test_fixtures]]
+id = "iso-sparing-boundary-fixture"
+kind = "iso"
+license = "MIT"
+version = "v1-libmkiso-0.1.5-tests"
+source_path = "crates/core/tests/fixtures/iso/sparing-overflow-v1.udf"
+source_url = "repo:crates/libmkiso-fork/tests/udf_profiles.rs"
+bytes = 667648
+sha256 = "cd02037ce12b1605abc4b0fb8ab2453315daca73d8a6b68c1cc19c9a28ff75f8"
+provenance = "Synthetic address-mapping boundary fixture derived from MIT upstream test helpers. Normal core tests also invoke the public reader directly and verify exact payload; no VRS/facade-format claim. Upstream LICENSE retained."
+
+[[test_fixtures]]
+id = "iso-large-sparse-fixture"
+kind = "iso"
+license = "GPL-3.0-or-later"
+version = "v1-xorriso-1.5.8.pl02"
+source_path = "target/iso-fixtures/large-v1.iso"
+source_url = "repo:docs/spike/make-iso-fixtures.ps1"
+bytes = 4295346176
+sha256 = "a9add0e5da8c783d4a9514af21f4fc8ff342f8ca5feb73d861caf30ea086f34c"
+provenance = "Locally generated ignored sparse level-3 image; allocated bytes 1441792. Independent streaming extraction, extent/boundary markers and full image SHA verified. Generation and failure receipts are in iso-fixtures-receipt.json and iso-fixture-failures.json."
+
+[[catalogs]]
+id = "tonalli-builtin-catalog-v1"
+kind = "signed-catalog"
+version = "1"
+origin = "Generated bundled resource; no network URL"
+source_path = "target/model-management-r1/public-assets-before-r2/catalog-v1.json"
+bytes = 1596
+sha256 = "1313f976cde11a7f5e02a1dc6c3d300cd8400178d471eb8f840c5deacef56f34"
+signature_path = "target/model-management-r1/public-assets-before-r2/catalog-v1.sig"
+signature_bytes = 64
+signature_sha256 = "b513397a32397ce58719e25fccb5f786c5a4a46b7683e545f685bdbb74f9e0e4"
+publisher_public_key_path = "crates/core/assets/catalog/publisher-public-key.bin"
+publisher_public_key_bytes = 32
+publisher_public_key_sha256 = "fbd29b6933a3f2850c0622883324bd701fbf6e153e350a150d422e21825d96b2"
+provenance = "Four EN/ES ZIM descriptors derived from the existing recorded Kiwix publisher URLs/versions/bytes/SHA256, signed locally with the publisher CLI. No new network or whole-corpus verification claimed. Only public key/signature/data ship; private key stays outside checkout. No map entry is represented as a complete country pack."
+
+[[catalogs]]
+id = "tonalli-builtin-catalog-v2"
+kind = "signed-catalog"
+version = "2"
+origin = "Generated bundled resource; no network URL"
+source_path = "crates/core/assets/catalog/catalog-v1.json"
+bytes = 2485
+sha256 = "dae545d37e7f71729eacd42d7e23e68247e67d9ddb808d37aa688d6810ef9fe9"
+signature_path = "crates/core/assets/catalog/catalog-v1.sig"
+signature_bytes = 64
+signature_sha256 = "0706cebf80347ddf3f2cf42a25b5086cccd7b657bbf8043fe8b458f151331e73"
+publisher_public_key_path = "crates/core/assets/catalog/publisher-public-key.bin"
+publisher_public_key_bytes = 32
+publisher_public_key_sha256 = "fbd29b6933a3f2850c0622883324bd701fbf6e153e350a150d422e21825d96b2"
+provenance = "Four unchanged book descriptors plus already recorded Qwen3 1.7B/4B GGUF publisher URLs, immutable upstream revisions, lengths and SHA256 pins. Model display version is the 2026-11-11 verified snapshot date, not a new upstream release claim. Content ID qwen3-1_7b-q4-k-m adapts the legacy dotted model ID to the existing strict content-ID grammar; model bytes, installation hashes and native launch options are unchanged. Signed with the existing outside-repo publisher key through the schema-validating CLI; independently verified against the unchanged compiled public pin before publication. Historical revision1 bytes are preserved in the named ignored checkpoint and at source e6476a8. No new model acquisition or inference-quality gate claim."
+
+# Whole-country extraction acceptance, 2026-11-12
+
+[[generated_maps]]
+id = "country-mx-z8"
+kind = "pmtiles"
+country = "MX"
+version = "4.15.2-20261112-z8"
+bytes = 4723076
+sha256 = "f10b5d2d296823b2fb1fd06f4488cf766219ebb279bb6c1c5159b3b3f5cd04e1"
+source_url = "https://build.protomaps.com/20261112.pmtiles"
+source_path = "target/country-map-acceptance/mx/f10b5d2d296823b2fb1fd06f4488cf766219ebb279bb6c1c5159b3b3f5cd04e1.pmtiles"
+provenance = "Locally generated whole-country Natural Earth region with NOMAD 0.1-degree buffer and pinned go-pmtiles algorithm. TLS/strong ETag range snapshot; complete parent archive hash not locally verified. Staged output locally SHA-256 and Core PMTiles metadata verified. Native desktop algorithm acceptance only; exact app runtime recorded separately."
+
+[[generated_maps]]
+id = "country-us-z8"
+kind = "pmtiles"
+country = "US"
+version = "4.15.2-20261112-z8"
+bytes = 52070402
+sha256 = "215129323a9076a6ce61cd381de2a945f62767cf3b53a237b388b66c433b6d28"
+source_url = "https://build.protomaps.com/20261112.pmtiles"
+source_path = "target/country-map-acceptance/us/215129323a9076a6ce61cd381de2a945f62767cf3b53a237b388b66c433b6d28.pmtiles"
+provenance = "Locally generated whole-country Natural Earth region with NOMAD 0.1-degree buffer and pinned go-pmtiles algorithm. TLS/strong ETag range snapshot; complete parent archive hash not locally verified. Staged output locally SHA-256 and Core PMTiles metadata verified. Native desktop algorithm acceptance only; exact app runtime recorded separately."
+
+[[generated_maps]]
+id = "country-ca-z8"
+kind = "pmtiles"
+country = "CA"
+version = "4.15.2-20261112-z8"
+bytes = 100175823
+sha256 = "ff2696a67bfa6a8a9f77f9cd59eb22328218bd0fe702cc4daab3cb77bde8a9f5"
+source_url = "https://build.protomaps.com/20261112.pmtiles"
+source_path = "target/country-map-acceptance-ca/ca/ff2696a67bfa6a8a9f77f9cd59eb22328218bd0fe702cc4daab3cb77bde8a9f5.pmtiles"
+provenance = "Locally generated whole-country Natural Earth region with NOMAD 0.1-degree buffer and pinned go-pmtiles algorithm. TLS/strong ETag range snapshot; complete parent archive hash not locally verified. Staged output locally SHA-256 and Core PMTiles metadata verified. Native desktop algorithm acceptance only; exact app runtime recorded separately."
+
+[[generated_maps]]
+id = "country-mx-z12"
+kind = "pmtiles"
+country = "MX"
+version = "4.15.2-20261112-z12"
+bytes = 140658172
+sha256 = "b4f02b68f37a4055bd5ef7c402c959451827cd6838fc1035536d477a75bfcfd5"
+source_url = "https://build.protomaps.com/20261112.pmtiles"
+source_path = "target/country-map-standard/mx/b4f02b68f37a4055bd5ef7c402c959451827cd6838fc1035536d477a75bfcfd5.pmtiles"
+provenance = "Locally generated whole-country Natural Earth region with NOMAD 0.1-degree buffer and pinned go-pmtiles algorithm. TLS/strong ETag range snapshot; complete parent archive hash not locally verified. Staged output locally SHA-256 and Core PMTiles metadata verified. Native desktop algorithm acceptance only; exact app runtime recorded separately."
+[[generated_media]]
+name = "Video-check-8d31.mp4"
+version = "2026-11-13-video-r2"
+source_url = "generated:ffmpeg-testsrc2-h264-aac-silence-90s"
+bytes = 345646
+sha256 = "60253a7e435d59631f279b0e41e5d5c0976939a143d28c7cb8810cdb0fd95f5b"
+provenance = "Locally generated 160x90 5fps H.264/yuv420p with silent AAC mono. Imported using production Files API on phone and desktop; no personal media or network download. Not bundled."
+
+[[generated_media]]
+name = "poster.png"
+version = "2026-11-13-video-r2"
+source_url = "generated:ffmpeg-video-check-first-frame"
+bytes = 11107
+sha256 = "4fd09dc08ec189c775989612ac3b83b1f2cc59673d907c3390a4281c1f52e199"
+provenance = "Local generated test-pattern raster cover. Not bundled."
+
+[[generated_media]]
+name = "Unsupported-check-8d31.mp4"
+version = "2026-11-13-video-r2"
+source_url = "generated:invalid-container-text-fixture"
+bytes = 63
+sha256 = "245bf11d57b78eac6dc19bdaaaf3e646952fc7c16942ba00dea5bb8b8e2482c9"
+provenance = "Deliberately invalid synthetic media for useful-error/source-preservation checks. Not bundled."
+
+[[generated_media]]
+name = "Gallery-check-42bf-A.png"
+version = "2026-11-13-gallery-r2"
+source_url = "generated:tonalli-gallery-42bf/Gallery-check-42bf-A.png"
+bytes = 11107
+sha256 = "4fd09dc08ec189c775989612ac3b83b1f2cc59673d907c3390a4281c1f52e199"
+provenance = "Local synthetic Gallery/sharing fixture; production managed import API, no personal data or external download. Not bundled."
+
+[[generated_media]]
+name = "Gallery-check-42bf-B.gif"
+version = "2026-11-13-gallery-r2"
+source_url = "generated:tonalli-gallery-42bf/Gallery-check-42bf-B.gif"
+bytes = 43
+sha256 = "693d949d8c3fdc7fd4ace7c340b5f177a9f0c5be7bafee8bc93a7d88b7523d75"
+provenance = "Local synthetic Gallery/sharing fixture; production managed import API, no personal data or external download. Not bundled."
+
+[[generated_media]]
+name = "Gallery-check-42bf-Movie.mp4"
+version = "2026-11-13-gallery-r2"
+source_url = "generated:tonalli-gallery-42bf/Gallery-check-42bf-Movie.mp4"
+bytes = 345646
+sha256 = "60253a7e435d59631f279b0e41e5d5c0976939a143d28c7cb8810cdb0fd95f5b"
+provenance = "Local synthetic Gallery/sharing fixture; production managed import API, no personal data or external download. Not bundled."
+
+[[generated_media]]
+name = "Gallery-check-42bf-Text.txt"
+version = "2026-11-13-gallery-r2"
+source_url = "generated:tonalli-gallery-42bf/Gallery-check-42bf-Text.txt"
+bytes = 78
+sha256 = "7f8e35a0bcc5a8fd4e6ec37183f0003d746fcf45e667fa8f193a91f8b26ac765"
+provenance = "Local synthetic Gallery/sharing fixture; production managed import API, no personal data or external download. Not bundled."
+
+[[generated_media]]
+name = "Gallery-check-42bf-Download.html"
+version = "2026-11-13-gallery-r2"
+source_url = "generated:tonalli-gallery-42bf/Gallery-check-42bf-Download.html"
+bytes = 72
+sha256 = "6edc2656447adc67b432f28cbd8345aa99effc5cbba220a21087209b26a7d185"
+provenance = "Local synthetic Gallery/sharing fixture; production managed import API, no personal data or external download. Not bundled."
+
+[[generated_media]]
+name = "Gallery-check-42bf-Bytes.bin"
+version = "2026-11-13-gallery-r2"
+source_url = "generated:tonalli-gallery-42bf/Gallery-check-42bf-Bytes.bin"
+bytes = 256
+sha256 = "40aff2e9d2d8922e47afd4648e6967497158785fbd1da870e7110266bf944880"
+provenance = "Local synthetic Gallery/sharing fixture; production managed import API, no personal data or external download. Not bundled."
+
+[[generated_media]]
+name = "Gallery-check-42bf-Hidden.png"
+version = "2026-11-13-gallery-r2"
+source_url = "generated:tonalli-gallery-42bf/Gallery-check-42bf-Hidden.png"
+bytes = 11107
+sha256 = "4fd09dc08ec189c775989612ac3b83b1f2cc59673d907c3390a4281c1f52e199"
+provenance = "Local synthetic Gallery/sharing fixture; production managed import API, no personal data or external download. Not bundled."
+
+[[generated_media]]
+name = "Gallery-check-42bf-Invalid.png"
+version = "2026-11-13-gallery-r2"
+source_url = "generated:tonalli-gallery-42bf/Gallery-check-42bf-Invalid.png"
+bytes = 39
+sha256 = "d8c1e22c6e688d492fa8922bb0c3e55a3f08fc16e0214ca8011de6678902ad8a"
+provenance = "Local synthetic Gallery/sharing fixture; production managed import API, no personal data or external download. Not bundled."
+
+[[generated_media]]
+name = "Gallery-check-42bf-Music.wav"
+version = "2026-11-13-gallery-r2"
+source_url = "generated:tonalli-gallery-42bf/Gallery-check-42bf-Music.wav"
+bytes = 160044
+sha256 = "c46ca7050a32b0bb5133651542091622b93b94b819c066ada3829abaee4b269e"
+provenance = "Local synthetic Gallery/sharing fixture; production managed import API, no personal data or external download. Not bundled."
+
+[[generated_media]]
+name = "Document-check.pdf"
+version = "2026-11-13-document-fixture-v1"
+source_url = "generated:web-stub/tests/e2e/documents.spec.mjs#pdfFixture"
+bytes = 953
+sha256 = "03f0d728f59258bd86267f7397609747c027fa7b69ef51ba9bc9084a6187b30e"
+provenance = "Locally generated two-page PDF with an inert JavaScript open action; production managed import and PDF.js integration fixture. Not bundled as user content."
+
+[[generated_media]]
+name = "Invalid-document.pdf"
+version = "2026-11-13-document-fixture-v1"
+source_url = "generated:web-stub/tests/e2e/documents.spec.mjs#invalid"
+bytes = 30
+sha256 = "869d4d582c0ab3445ba27d31903ff859236986df705d9529c9476f1467490368"
+provenance = "Locally generated PDF-header-only corrupt fixture for practical read errors; not bundled."
+
+[[generated_media]]
+name = "Book-check.epub"
+version = "2026-11-13-document-fixture-v1"
+source_url = "generated:web-stub/tests/e2e/books.spec.mjs#epub"
+bytes = 57484
+sha256 = "fe4d6d8cfa4949fce03b87840752397a6df07d8ada12de8cbc2cbf62aecf0575"
+provenance = "Deterministic local stored ZIP with repeated spine entry, long Unicode chapters, internal/external anchors and inert script; not bundled."
+
+[[generated_media]]
+name = "Comic-check.cbz"
+version = "2026-11-13-document-fixture-v1"
+source_url = "generated:web-stub/tests/e2e/books.spec.mjs#comic"
+bytes = 213258
+sha256 = "9cbb9218de29e65a4909742c7c3e8ccd01a0134fb1d171d28863f989e5332bb3"
+provenance = "Deterministic local stored ZIP with20 synthetic PNG/GIF pages in nonnumeric archive order; images reused from owned Gallery fixtures; not bundled."
+
+[[generated_media]]
+name = "Broken-book.cbz"
+version = "2026-11-13-document-fixture-v1"
+source_url = "generated:web-stub/tests/e2e/books.spec.mjs#broken"
+bytes = 124
+sha256 = "d54b7109bdecf8d2463dc279c1feeab23c50c0f38418c60d8b125e2e5b0c699b"
+provenance = "Deterministic local valid ZIP containing one invalid PNG member for the reader error flow; not bundled."
+
+[[generated_media]]
+name = "SVG-check.epub"
+version = "2026-11-13-document-fixture-v1"
+source_url = "generated:web-stub/tests/e2e/books.spec.mjs#svgBook"
+bytes = 875
+sha256 = "ea89a86a76bdbcef34c051665ad248de0ab373d91a80e78f7a5376d9a6ccebc3"
+provenance = "Deterministic local EPUB with a single SVG spine cover and inert embedded script; not bundled."
+
+[[test_fixtures]]
+id = "embedded-documents"
+kind = "zim"
+license = "GPL-3.0-or-later"
+version = "v1-python-libzim-4.1.0-native-9.8.2"
+source_path = "crates/core/tests/fixtures/documents/documents-v1.zim"
+source_url = "repo:scripts/make-document-fixture.py"
+bytes = 307912
+sha256 = "ece79a931149a0405afbc6dcd3c411b1a2b0397b20c919d4d6e825e3e1637af6"
+provenance = "Original HTML plus recorded synthetic PDF/EPUB/CBZ inputs; official pinned writer, no compression/full-text indexing, one writer worker. Member bytes, redirects and archive MD5 checked. UUID-dependent archive; frozen manifest beside pack. Not bundled as user content."
+
+[[test_fixtures]]
+id = "cookbook-recipe"
+kind = "cooklang-text"
+license = "GPL-3.0-or-later"
+version = "v1"
+source_path = "web-stub/tests/fixtures/recipe-check.cook"
+source_url = "repo:web-stub/tests/fixtures/recipe-check.cook"
+bytes = 203
+sha256 = "45e89ca0dcfd4bd1730111e8d5df43dcb1f9a7bf42d8042fe27f419a56ede7dc"
+provenance = "Original bilingual synthetic recipe; no external recipe text copied. Not bundled as user content."
+
+[[test_fixtures]]
+id = "workshop-ascii-stl"
+kind = "stl"
+license = "GPL-3.0-or-later"
+version = "v1"
+source_path = "web-stub/tests/fixtures/workshop/Block-ascii.stl"
+source_url = "repo:scripts/make-workshop-fixtures.py"
+bytes = 1101
+sha256 = "3b19134db58ae7eade88142a91c1acc6816fbac751a4b2e4a3274497bfe3e3d8"
+provenance = "Original non-symmetric block,12 facets. Not bundled as user content."
+
+[[test_fixtures]]
+id = "workshop-binary-stl"
+kind = "stl"
+license = "GPL-3.0-or-later"
+version = "v1"
+source_path = "web-stub/tests/fixtures/workshop/Block-binary.STL"
+source_url = "repo:scripts/make-workshop-fixtures.py"
+bytes = 684
+sha256 = "e76c3b3423337e160514e68633a0a5631360e66aa895d8c40ea4e6e5ac9b7f58"
+provenance = "Original12-facet block, fixed80-byte header and little-endian records. Not bundled."
+
+[[test_fixtures]]
+id = "workshop-obj"
+kind = "obj"
+license = "GPL-3.0-or-later"
+version = "v1"
+source_path = "web-stub/tests/fixtures/workshop/Block.obj"
+source_url = "repo:scripts/make-workshop-fixtures.py"
+bytes = 224
+sha256 = "a0491374abece97772b9ba889235780043649e71b9b5ef1c0aa39a702e8108e3"
+provenance = "Original block with6 quad faces and deliberately inert external material reference. Not bundled."
+
+[[test_fixtures]]
+id = "workshop-3mf"
+kind = "3mf"
+license = "GPL-3.0-or-later"
+version = "v1"
+source_path = "web-stub/tests/fixtures/workshop/Components.3mf"
+source_url = "repo:scripts/make-workshop-fixtures.py"
+bytes = 1008
+sha256 = "3cb6e623a4a8ae7ad8cbb2b183d93df1ca1cc63e1b37dce36e86ada405368308"
+provenance = "Original OPC ZIP with relationships/content types and two transformed instances of the12-triangle block; member bytes/CRC checked. Not bundled."
+
+[[test_fixtures]]
+id = "workshop-invalid-stl"
+kind = "stl"
+license = "GPL-3.0-or-later"
+version = "v1"
+source_path = "web-stub/tests/fixtures/workshop/Broken.stl"
+source_url = "repo:scripts/make-workshop-fixtures.py"
+bytes = 84
+sha256 = "f5f0c6df765fd54284a9913773f0a31453f55ebe538c5d2eb2634ff8d9a217a3"
+provenance = "Original invalid header declaring UINT32_MAX triangles without records; error fixture only, not bundled."

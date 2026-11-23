@@ -1,0 +1,32 @@
+{
+  "license": "GPL-3.0-or-later",
+  "version": "v1",
+  "original": true,
+  "files": [
+    {
+      "name": "Block-ascii.stl",
+      "bytes": 1101,
+      "sha256": "3b19134db58ae7eade88142a91c1acc6816fbac751a4b2e4a3274497bfe3e3d8"
+    },
+    {
+      "name": "Block-binary.STL",
+      "bytes": 684,
+      "sha256": "e76c3b3423337e160514e68633a0a5631360e66aa895d8c40ea4e6e5ac9b7f58"
+    },
+    {
+      "name": "Block.obj",
+      "bytes": 224,
+      "sha256": "a0491374abece97772b9ba889235780043649e71b9b5ef1c0aa39a702e8108e3"
+    },
+    {
+      "name": "Broken.stl",
+      "bytes": 84,
+      "sha256": "f5f0c6df765fd54284a9913773f0a31453f55ebe538c5d2eb2634ff8d9a217a3"
+    },
+    {
+      "name": "Components.3mf",
+      "bytes": 1008,
+      "sha256": "3cb6e623a4a8ae7ad8cbb2b183d93df1ca1cc63e1b37dce36e86ada405368308"
+    }
+  ]
+}

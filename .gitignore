@@ -1,0 +1,34 @@
+**/target/
+**/__pycache__/
+/docs/spike/packs/
+**/node_modules/
+**/.gradle/
+**/local.properties
+/web-stub/dist/
+/web-stub/public/assets/map/
+/web-stub/public/assets/pdf/
+/desktop/gen/
+
+# Native libzim writer scratch indexes; frozen article ZIMs and inputs are tracked.
+/crates/core/tests/fixtures/articles/*.zim_title.idx*
+/crates/core/tests/fixtures/documents/*.zim_title.idx*
+
+# Private runtime, signing and local export data
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.mobileprovision
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.log
+/private/
+/data/
+/artifacts/

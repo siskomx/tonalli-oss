@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "revision": 3,
+  "entries": [
+    {
+      "id": "wikipedia-en-knots",
+      "title": "Knots by Wikipedia",
+      "kind": "zim",
+      "language": "en",
+      "version": "2026-10",
+      "bytes": 14093352,
+      "sha256": "29a3ffa52a725d0ef9dd5359d27b864ec8454c61430c0bfb15fd1929f4b73390",
+      "url": "https://ftp.nluug.nl/pub/kiwix/zim/wikipedia/wikipedia_en_knots_maxi_2026-10.zim"
+    },
+    {
+      "id": "wikipedia-es-climate-change",
+      "title": "Cambio climático (Wikipedia en español)",
+      "kind": "zim",
+      "language": "es",
+      "version": "2026-10",
+      "bytes": 61576021,
+      "sha256": "56a6ec0072e15206475b2c6ab79a389ecb7508079f1b9dae36c187c87631a4d3",
+      "url": "https://ftp.nluug.nl/pub/kiwix/zim/wikipedia/wikipedia_es_climate-change_maxi_2026-10.zim"
+    },
+    {
+      "id": "wikipedia-en-all-nopic",
+      "title": "Wikipedia (English, no pictures)",
+      "kind": "zim",
+      "language": "en",
+      "version": "2026-06",
+      "bytes": 52690706555,
+      "sha256": "441a56d9e05b2d98f8ae9acb7986a513ed47904d73852c92dc6b7d50baa122e5",
+      "url": "https://ftp.nluug.nl/pub/kiwix/zim/wikipedia/wikipedia_en_all_nopic_2026-06.zim"
+    },
+    {
+      "id": "wikipedia-en-medicine-nopic",
+      "title": "WikiMed Medical Encyclopedia",
+      "kind": "zim",
+      "language": "en",
+      "version": "2026-10",
+      "bytes": 1047708415,
+      "sha256": "718fadad40b3491be3fa8f95181a948e4d726f97a79a14e0ef1b90c6b2b03625",
+      "url": "https://ftp.nluug.nl/pub/kiwix/zim/wikipedia/wikipedia_en_medicine_nopic_2026-10.zim"
+    },
+    {
+      "id": "qwen3-0_6b-q4-0",
+      "title": "Qwen 3 (smallest, for older phones)",
+      "kind": "model",
+      "language": "en-es",
+      "version": "2026-11-16",
+      "bytes": 428970080,
+      "sha256": "da2572f16c06133561ce56accaa822216f2391ef4d37fba427801cd6736417d4",
+      "url": "https://huggingface.co/ggml-org/Qwen3-0.6B-GGUF/resolve/afe8ad3577aa22500b3cd1c880f153b3b0e1cae8/Qwen3-0.6B-Q4_0.gguf"
+    },
+    {
+      "id": "qwen3-1_7b-q4-k-m",
+      "title": "Qwen 3 (smaller download)",
+      "kind": "model",
+      "language": "en-es",
+      "version": "2026-11-11",
+      "bytes": 1282439264,
+      "sha256": "d2387ca2dbfee2ffabce7120d3770dadca0b293052bc2f0e138fdc940d9bc7b5",
+      "url": "https://huggingface.co/ggml-org/Qwen3-1.7B-GGUF/resolve/daeb8e2d528a760970442092f6bf1e55c3b659eb/Qwen3-1.7B-Q4_K_M.gguf"
+    },
+    {
+      "id": "qwen3-4b-q4-k-m",
+      "title": "Qwen 3 (larger download)",
+      "kind": "model",
+      "language": "en-es",
+      "version": "2026-11-11",
+      "bytes": 2497280256,
+      "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/bc640142c66e1fdd12af0bd68f40445458f3869b/Qwen3-4B-Q4_K_M.gguf"
+    }
+  ]
+}

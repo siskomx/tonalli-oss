@@ -1,0 +1,13 @@
+<resources>
+    <string name="media_saved">Copy saved.</string>
+    <string name="media_selection_limit">Choose up to 100 files at a time.</string>
+    <string name="media_import_help">Choose files or a folder to copy into Tonalli. Originals are kept. This approved import can finish if Android closes the reader while picking files. Keep this screen open while copying.</string>
+    <string name="media_back_files">Back to files</string>
+    <string name="media_import_failed">Import could not start. Return to Files, unlock Admin and prepare the import again.</string>
+    <string name="media_stop_import">Stop importing</string>
+    <string name="media_import_stopped">Stopped after adding %1$d copies. Originals were kept.</string>
+    <string name="media_import_reading">Reading your selection…</string>
+    <string name="media_import_progress">Copying and checking %1$d of %2$d…</string>
+    <string name="media_import_result">Added %1$d copies; %2$d could not be added. Originals were kept. If anything failed, check free storage and short file names, then prepare a new import in Files.</string>
+    <string name="media_save_failed">The copy could not be saved completely. Your managed file is safe. Check the destination and try again.</string>
+</resources>

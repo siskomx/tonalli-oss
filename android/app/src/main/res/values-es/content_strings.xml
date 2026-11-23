@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="content_download_channel">Descargas de contenido</string>
+    <string name="content_download_title">Obteniendo tu contenido</string>
+    <string name="content_download_running">Descargando, comprobando y guardando. Abre Tonalli para ver el progreso o pausar.</string>
+    <string name="reader_open_file">Abrir un archivo</string>
+    <string name="reader_settings">Ajustes</string>
+    <string name="reader_done">Listo</string>
+    <string name="reader_private">Tu biblioteca permanece en este dispositivo.</string>
+    <string name="reader_advanced">Herramientas avanzadas</string>
+    <string name="reader_diagnostics">Diagnóstico</string>
+    <string name="reader_starting">Abriendo tu Biblioteca…</string>
+    <string name="reader_open_failed">No se pudo abrir esta pantalla. Ciérrala y vuelve a abrir Biblioteca.</string>
+    <string name="reader_file_blocked">Este archivo no se puede abrir aquí. Usa Obtener contenido o Abrir un archivo.</string>
+    <string name="reader_choose_help">Elige archivos o una carpeta para tu Biblioteca. El contenido existente seguirá disponible si no se pueden abrir.</string>
+    <string name="reader_choose_files">Elegir archivos</string>
+    <string name="reader_choose_folder">Elegir carpeta</string>
+    <string name="reader_back_library">Volver a Biblioteca</string>
+    <string name="reader_no_picker">No hay un selector de archivos disponible. Se conservó el contenido existente.</string>
+    <string name="reader_cancelled">Selección cancelada. Se conservó el contenido existente.</string>
+    <string name="reader_reading">Leyendo tus archivos…</string>
+    <string name="reader_choose_library">Elegir una biblioteca</string>
+    <string name="reader_part_count">\u0020(%1$d partes)</string>
+    <string name="reader_file_failed">No se pudo abrir este archivo. Si tiene varias partes, selecciónalas todas. Se conservó el contenido existente.</string>
+    <string name="reader_checking_file">Comprobando tu archivo…</string>
+    <string name="reader_save_failed">No se pudo guardar el contenido. Se conservó el contenido existente.</string>
+    <string name="reader_saved_failed">No se pudieron leer los archivos guardados. Usa Abrir un archivo para volver a elegirlos. Se conservaron tus selecciones.</string>
+    <string name="reader_saved_unavailable">Archivos no disponibles: %1$d. Vuelve a conectar su almacenamiento o usa Abrir un archivo. Se conservaron tus selecciones.</string>
+</resources>

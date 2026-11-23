@@ -1,0 +1,27 @@
+# This is a Gradle generated file for dependency locking.
+# Manual edits can break the build and are not advised.
+# This file is expected to be part of source control.
+com.google.ai.edge.litertlm:litertlm-android:0.19.1=debugAndroidTestCompileClasspath,debugCompileClasspath,debugRuntimeClasspath,debugUnitTestCompileClasspath,debugUnitTestRuntimeClasspath,sdkNotices
+com.google.code.gson:gson:2.14.0=debugAndroidTestCompileClasspath,debugCompileClasspath,debugRuntimeClasspath,debugUnitTestCompileClasspath,debugUnitTestRuntimeClasspath
+com.google.errorprone:error_prone_annotations:2.48.0=debugAndroidTestCompileClasspath,debugCompileClasspath,debugRuntimeClasspath,debugUnitTestCompileClasspath,debugUnitTestRuntimeClasspath
+org.jetbrains.kotlin:kotlin-build-tools-api:2.4.0=kotlinBuildToolsApiClasspath,kotlinCompilerClasspath
+org.jetbrains.kotlin:kotlin-build-tools-compat:2.4.0=kotlinBuildToolsApiClasspath,kotlinCompilerClasspath
+org.jetbrains.kotlin:kotlin-build-tools-cri-impl:2.4.0=kotlinBuildToolsApiClasspath,kotlinCompilerClasspath
+org.jetbrains.kotlin:kotlin-build-tools-impl:2.4.0=kotlinBuildToolsApiClasspath,kotlinCompilerClasspath
+org.jetbrains.kotlin:kotlin-compiler-embeddable:2.4.0=kotlinBuildToolsApiClasspath,kotlinCompilerClasspath
+org.jetbrains.kotlin:kotlin-compiler-runner:2.4.0=kotlinBuildToolsApiClasspath,kotlinCompilerClasspath
+org.jetbrains.kotlin:kotlin-daemon-client:2.4.0=kotlinBuildToolsApiClasspath,kotlinCompilerClasspath
+org.jetbrains.kotlin:kotlin-daemon-embeddable:2.4.0=kotlinBuildToolsApiClasspath,kotlinCompilerClasspath
+org.jetbrains.kotlin:kotlin-reflect:1.6.10=kotlinBuildToolsApiClasspath,kotlinCompilerClasspath
+org.jetbrains.kotlin:kotlin-reflect:2.4.0=debugAndroidTestCompileClasspath,debugCompileClasspath,debugRuntimeClasspath,debugUnitTestCompileClasspath,debugUnitTestRuntimeClasspath
+org.jetbrains.kotlin:kotlin-script-runtime:2.4.0=kotlinBuildToolsApiClasspath,kotlinCompilerClasspath
+org.jetbrains.kotlin:kotlin-stdlib:2.4.0=debugAndroidTestCompileClasspath,debugCompileClasspath,debugRuntimeClasspath,debugUnitTestCompileClasspath,debugUnitTestRuntimeClasspath,kotlinBuildToolsApiClasspath,kotlinCompilerClasspath
+org.jetbrains.kotlin:kotlin-tooling-core:2.4.0=kotlinBuildToolsApiClasspath,kotlinCompilerClasspath
+org.jetbrains.kotlinx:kotlinx-coroutines-android:1.11.0=debugAndroidTestCompileClasspath,debugCompileClasspath,debugRuntimeClasspath,debugUnitTestCompileClasspath,debugUnitTestRuntimeClasspath
+org.jetbrains.kotlinx:kotlinx-coroutines-bom:1.11.0=debugAndroidTestCompileClasspath,debugCompileClasspath,debugRuntimeClasspath,debugUnitTestCompileClasspath,debugUnitTestRuntimeClasspath
+org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.11.0=debugAndroidTestCompileClasspath,debugCompileClasspath,debugRuntimeClasspath,debugUnitTestCompileClasspath,debugUnitTestRuntimeClasspath
+org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.8.0=kotlinBuildToolsApiClasspath,kotlinCompilerClasspath
+org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0=debugAndroidTestCompileClasspath,debugCompileClasspath,debugRuntimeClasspath,debugUnitTestCompileClasspath,debugUnitTestRuntimeClasspath
+org.jetbrains:annotations:13.0=kotlinBuildToolsApiClasspath,kotlinCompilerClasspath
+org.jetbrains:annotations:23.0.0=debugAndroidTestCompileClasspath,debugCompileClasspath,debugRuntimeClasspath,debugUnitTestCompileClasspath,debugUnitTestRuntimeClasspath
+empty=androidApis,debugAndroidTestRuntimeClasspath,debugAnnotationProcessorClasspath,debugReverseMetadataValues,kotlinCompilerPluginClasspathDebug,lintChecks

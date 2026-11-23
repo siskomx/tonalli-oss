@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "kind": "tonalli-rerank-inputs",
+  "catalog_sha256": "a54d5cc9eb9e5dcc45800ba8929d81d4c2b79e67653c23384445231caabfd610",
+  "catalog_entries_verified": 54,
+  "source_pack_sha256": "29a3ffa52a725d0ef9dd5359d27b864ec8454c61430c0bfb15fd1929f4b73390",
+  "source_index_sha256": "5b461e7da50ee5850a3e3c5e87a694816e19745b70df40539741e0f9abed52de",
+  "questions_file_sha256": "e3c137160f0062a68c0fe33cd46fbca56c72e8def0c01a6958d5c82020510b57",
+  "embedding_model": {
+    "id": "bge-small-en-v1.5-q8-0",
+    "bytes": 36685152,
+    "sha256": "f046db1dc724cf4f6f0a0c5917e922823b73eb1d27b8f9a9c2797f7866974804"
+  },
+  "query_prefix": "Represent this sentence for searching relevant passages: ",
+  "query_prefix_source_url": "https://huggingface.co/BAAI/bge-small-en-v1.5",
+  "questions": [
+    {
+      "id": "q01",
+      "raw_question_json_bytes": 31049,
+      "sha256": "7ca367e3e162048fb800cd3c5893f8ae251659e0345a2337b36e4de323849f6f"
+    },
+    {
+      "id": "q02",
+      "raw_question_json_bytes": 30903,
+      "sha256": "d78fefa5576c2ae4db62b1259748f5dd16dd009970aff26d02d25a14690f8179"
+    },
+    {
+      "id": "q03",
+      "raw_question_json_bytes": 31004,
+      "sha256": "8cbc814b59f0b84b94570c5623a0f1a2a0c5d4cc59b7535d2f676e0d65faba45"
+    },
+    {
+      "id": "q04",
+      "raw_question_json_bytes": 30897,
+      "sha256": "ff5fc831b88b254b98cf974ea18fd11173e4898bf418b9c830ba976a8e52f0bb"
+    },
+    {
+      "id": "q05",
+      "raw_question_json_bytes": 29986,
+      "sha256": "74216b34db741850f2004f837abf8f2f5faa0caac41efe4e21db08eb7d7d82e2"
+    },
+    {
+      "id": "q06",
+      "raw_question_json_bytes": 31076,
+      "sha256": "ad51d5ec5c4bd6c2a9b025311918ec94c0ed8633455ee3e40461c87cba8e4c9b"
+    },
+    {
+      "id": "q07",
+      "raw_question_json_bytes": 31008,
+      "sha256": "ec8ac06745f0489d055219de7c9109245236ba453fb56e5fa73aa7c7095aa980"
+    },
+    {
+      "id": "q08",
+      "raw_question_json_bytes": 30928,
+      "sha256": "4fe87b1cc5aee805fc01edb85d56d988ea6613d8702f1f3b1e24bffbd32c5ac1"
+    },
+    {
+      "id": "q09",
+      "raw_question_json_bytes": 30987,
+      "sha256": "a486c7f007ddb02f4854c03642d75411745828dcf853bb31133f664e3fb5cce0"
+    },
+    {
+      "id": "q10",
+      "raw_question_json_bytes": 30900,
+      "sha256": "1c6bf9f93d6ace39f978309b053280f326520d8c1998f9b891d0d5a0874babd1"
+    }
+  ]
+}

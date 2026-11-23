@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generation": "generation-KOSM87",
+  "files": [
+    {
+      "path": "CURRENT",
+      "bytes": 17,
+      "sha256": "d69bad58fb70f0b40a72f2aa92970e46116189455b63402a41f1f670ce7ec098"
+    },
+    {
+      "path": "generation-KOSM87/.managed.json",
+      "bytes": 258,
+      "sha256": "901675044c02cb69eabc06b98129ce52c55f6271b19fd133e3050454914a279a"
+    },
+    {
+      "path": "generation-KOSM87/381fad4972f44962b93027db7e868d5b.fast",
+      "bytes": 145,
+      "sha256": "f7928dbc6d8bffb59964c225fb0baef150791fe968cdbe6a8cbf172b7c01bb66"
+    },
+    {
+      "path": "generation-KOSM87/381fad4972f44962b93027db7e868d5b.fieldnorm",
+      "bytes": 1915,
+      "sha256": "05571d0b57bdb1d05594cfc2ef37b75da46ef03f6f11a600e0bfcc7e8b5ce1cc"
+    },
+    {
+      "path": "generation-KOSM87/381fad4972f44962b93027db7e868d5b.idx",
+      "bytes": 387547,
+      "sha256": "ba32b3bed40abc89be7a3f1d28427b8a15ff2141a8c00fc3d49ad25f8e6dbb9d"
+    },
+    {
+      "path": "generation-KOSM87/381fad4972f44962b93027db7e868d5b.pos",
+      "bytes": 781976,
+      "sha256": "edd74b13927e7b85cdcdc192ecd10b9233f03597cfc1d8efba8654265682174b"
+    },
+    {
+      "path": "generation-KOSM87/381fad4972f44962b93027db7e868d5b.store",
+      "bytes": 17123,
+      "sha256": "6a837b49bd88ebe39a9bcb8eb37787a5ba6a3566100190408d49ad61baf2cc54"
+    },
+    {
+      "path": "generation-KOSM87/381fad4972f44962b93027db7e868d5b.term",
+      "bytes": 305681,
+      "sha256": "d42690edbb3a9fbdebce9ca9474cf4477279c609c54e684aeb772e08039c5c7f"
+    },
+    {
+      "path": "generation-KOSM87/meta.json",
+      "bytes": 1038,
+      "sha256": "adc8cf2605516393f7604ad8b80271d2dfecef120bd60ab3d318028fdce251cc"
+    },
+    {
+      "path": "generation-KOSM87/tonalli-meta.json",
+      "bytes": 477,
+      "sha256": "2e075adfa02c254cec2ee2f089f8d3ba3dba808536bff358ebd435481000122a"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+# DESIGN EXAMPLE ONLY. No loader or Mesh Gateway exists yet.
+# Copy to private configuration outside the checkout after implementation approval.
+# Values beginning REPLACE_ and ${...} are deliberately unusable placeholders.
+# They are NOT shell-expanded. Never insert real secrets into this tracked file.
+# Environment mapping: TONALLI_MESH__RADIO__SERIAL__BAUD overrides radio.serial.baud.
+
+enabled = false
+auto_start = false
+secrets_file = "${EXTERNAL_MESH_SECRETS_FILE}"
+
+[radio]
+transport = "serial"
+selector = "REPLACE_WITH_EXPLICIT_DEVICE_SELECTOR"
+connect_timeout_seconds = 10
+config_timeout_seconds = 30
+require_handoff = true
+reconnect = false
+
+[radio.serial]
+baud = 115200
+dtr = false
+rts = false
+
+[compatibility]
+allowed_firmware = []
+
+[storage]
+directory = "${EXTERNAL_MESH_DATA_DIRECTORY}"
+
+[lan]
+enabled = false
+network_selector = "REPLACE_WITH_EXPLICIT_LOCAL_NETWORK_SELECTOR"
+port = 0
+
+[history]
+enabled = true
+max_messages = 1000
+max_age_days = 7
+max_bytes = 10485760
+
+[access]
+grants_file = "${EXTERNAL_MESH_GRANTS_FILE}"
+default_channel_grants = []
+default_node_directory = false
+max_clients = 16
+pairing_seconds = 300
+ws_ticket_seconds = 15
+
+[limits]
+max_text_bytes = 200
+send_queue = 32
+subscriber_queue = 128
+client_sends_per_minute = 2
+total_sends_per_minute = 10
+history_page = 100
+http_body_bytes = 4096
+ws_frame_bytes = 16384
+
+[diagnostics]
+level = "warn"
+
+[spike]
+show_test_text = false
+
+# Host grants are empty by default. A future private owner flow may grant the
+# neutral fixture channel-a to a neutral fixture client; no real identities here.
+# Channel keys, history key and pairing tokens must never appear in this file.

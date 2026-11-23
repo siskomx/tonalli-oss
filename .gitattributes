@@ -1,0 +1,57 @@
+# Preserve this upstream notice byte-for-byte, including its own whitespace.
+web-stub/public/assets/vite-LICENSE.txt -text -whitespace
+web-stub/public/assets/react-ui-NOTICES.txt -text -whitespace
+web-stub/public/assets/project-nomad-NOTICE.txt -text -whitespace
+third_party/project-nomad/LICENSE -text -whitespace
+third_party/uppy-components-1.2.0-LICENSE -text -whitespace
+
+# Signed catalog resources bind exact bytes across every platform checkout.
+crates/core/assets/catalog/*.json -text whitespace=cr-at-eol
+crates/core/assets/catalog/*.sig -text
+crates/core/assets/catalog/*.bin -text
+
+# Adapted-source hashes in UPSTREAM.json must survive Windows checkout.
+native/maps-extract/** -text whitespace=cr-at-eol
+native/maps-extract/licenses/** -text -whitespace
+web-stub/src/features/map/CountryPicker.jsx -text
+web-stub/src/features/chat/* text eol=lf
+web-stub/src/features/content/* text eol=lf
+web-stub/src/ui/* text eol=lf
+web-stub/src/app/styles.css text eol=lf
+web-stub/src/app/AppLayout.jsx text eol=lf
+web-stub/tests/chat-*-upstream.test.mjs text eol=lf
+crates/core/tests/fixtures/iso/notices/pycdlib-1.22.0-COPYING.txt -text -whitespace
+crates/libmkiso-fork/LICENSE -text -whitespace
+android/licenses/* -text -whitespace
+
+# Measurement receipts are fingerprinted as raw bytes.
+docs/spike/web-perf-*.json -text
+docs/spike/ui-baseline-recovery.json -text
+docs/spike/departing-route-trace.json -text
+docs/spike/notes-*-browser*.json -text
+
+# Android compares this trusted manifest with the transfer bytes exactly.
+android/app/src/main/assets/index-probe-manifest.json -text
+android/app/src/main/assets/index-probe-small.json -text
+android/app/src/main/assets/index-probe-full.json -text
+android/app/src/main/assets/index-probe-medicine.json -text
+android/app/src/main/assets/benchmark-*.json -text
+docs/spike/phone-benchmark-inputs/*/manifest.json -text
+docs/spike/ai-rerank-questions-v1.json -text
+docs/spike/ai-rerank-inputs-v1.json -text
+docs/spike/gemma-prepared-passage-results-v1.csv -text -whitespace
+
+# Keep exported HTML byte-identical to production build inputs on Windows.
+web-stub/*.html text eol=lf
+crates/reqwest-fork/** -text
+crates/hyper-util-fork/** -text
+
+# Fixture manifests bind exact source bytes, including text model/recipe files.
+web-stub/tests/fixtures/workshop/* -text
+web-stub/tests/fixtures/recipe-check.cook -text
+
+# Keep published BLE JNI source and dependency notices byte-identical.
+third_party/btleplug-0.12.0/** -text -whitespace
+third_party/mesh-gateway-licenses/** -text -whitespace
+broker/licenses/** -text -whitespace
+crates/meshtastic-fork/** -text -whitespace

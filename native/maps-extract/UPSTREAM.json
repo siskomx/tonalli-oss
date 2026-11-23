@@ -1,0 +1,69 @@
+{
+  "repository": "https://github.com/protomaps/go-pmtiles",
+  "revision": "a3e4951ea6a0477b784c27c1dcbfd9c130878c5a",
+  "version": "v1.31.2",
+  "module_sum": "h1:xYXagv2oKJarheCdOIGg8MvYRp8Y03MBs9jegxf4NDQ=",
+  "license": "BSD-3-Clause",
+  "files": [
+    {
+      "original": "pmtiles/extract.go",
+      "original_sha256": "5a60e941d987c07d745e9c18c80f4c6eb8583ebf7c6c0f97abe3c67bb53f9867",
+      "destination": "native/maps-extract/pmtiles/extract.go",
+      "adapted_sha256": "2b53f8e8f8dc1a7f13cc50442f01acb7fc104d1a715e1f861bbb3913cac8b323"
+    },
+    {
+      "original": "pmtiles/directory.go",
+      "original_sha256": "e458140d304b476a9a05cbdc87b5a4ce71a22f947b2e1fc72390ce9389e44de8",
+      "destination": "native/maps-extract/pmtiles/directory.go",
+      "adapted_sha256": "e458140d304b476a9a05cbdc87b5a4ce71a22f947b2e1fc72390ce9389e44de8"
+    },
+    {
+      "original": "pmtiles/bitmap.go",
+      "original_sha256": "63adc5531ac70fa38f4cc1d919bcfba73c85bce069612df6a433e627ead37683",
+      "destination": "native/maps-extract/pmtiles/bitmap.go",
+      "adapted_sha256": "63adc5531ac70fa38f4cc1d919bcfba73c85bce069612df6a433e627ead37683"
+    },
+    {
+      "original": "pmtiles/region.go",
+      "original_sha256": "9119f9e3f92794cb8afc3a516e49652f931aa8796d646f0097471db3a53ab142",
+      "destination": "native/maps-extract/pmtiles/region.go",
+      "adapted_sha256": "9119f9e3f92794cb8afc3a516e49652f931aa8796d646f0097471db3a53ab142"
+    },
+    {
+      "original": "pmtiles/tile_id.go",
+      "original_sha256": "c0b28bf87c37c8bc3041938119ff00e8e0b634211d1ee00b941624acfbb3bc5b",
+      "destination": "native/maps-extract/pmtiles/tile_id.go",
+      "adapted_sha256": "c0b28bf87c37c8bc3041938119ff00e8e0b634211d1ee00b941624acfbb3bc5b"
+    },
+    {
+      "original": "pmtiles/extract_test.go",
+      "original_sha256": "da9361da6c6048ecade90e66ae7ab5fcf36f50727bdaea77c43ad0b72e3d1c3c",
+      "destination": "native/maps-extract/pmtiles/extract_test.go",
+      "adapted_sha256": "da9361da6c6048ecade90e66ae7ab5fcf36f50727bdaea77c43ad0b72e3d1c3c"
+    },
+    {
+      "original": "pmtiles/directory_test.go",
+      "original_sha256": "1a5d8f17dfe32691df69f0b2368a405623cad2ecd7893bcbb2f0365341d7f8e7",
+      "destination": "native/maps-extract/pmtiles/directory_test.go",
+      "adapted_sha256": "00aa46bb38d7db9abde28706721462e49f76cd919b1f5a0a110d9d0501e253f8"
+    },
+    {
+      "original": "pmtiles/bitmap_test.go",
+      "original_sha256": "9bd4a147e1e0d553c113eba77c6162bc572c9bc17c7354d5f545a07976114190",
+      "destination": "native/maps-extract/pmtiles/bitmap_test.go",
+      "adapted_sha256": "9bd4a147e1e0d553c113eba77c6162bc572c9bc17c7354d5f545a07976114190"
+    },
+    {
+      "original": "pmtiles/region_test.go",
+      "original_sha256": "cc6d8b97c954f86b6df82f2c4e2660614ca76e73275d5bfb5a03e0d8cf2ae6bd",
+      "destination": "native/maps-extract/pmtiles/region_test.go",
+      "adapted_sha256": "cc6d8b97c954f86b6df82f2c4e2660614ca76e73275d5bfb5a03e0d8cf2ae6bd"
+    },
+    {
+      "original": "pmtiles/tile_id_test.go",
+      "original_sha256": "a97260b97888df8e6409b335707e1cd8e3a0dbd1f8c75e4a36e07579181de72a",
+      "destination": "native/maps-extract/pmtiles/tile_id_test.go",
+      "adapted_sha256": "a97260b97888df8e6409b335707e1cd8e3a0dbd1f8c75e4a36e07579181de72a"
+    }
+  ]
+}

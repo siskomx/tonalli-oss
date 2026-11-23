@@ -1,0 +1,6 @@
+/* Keep a usable seek bar on phones; device buttons still adjust volume. */
+@media (max-width: 640px) {
+  [data-testid="video-player"] .plyr__volume input[type="range"] { display: none; }
+  [data-testid="video-player"] .plyr__volume { min-width: 0; width: auto; flex: 0 0 auto; }
+  [data-testid="video-player"] .plyr__time--duration { display: none; }
+}

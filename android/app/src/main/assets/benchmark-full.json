@@ -1,0 +1,16 @@
+{
+  "acceptance_eligible": true,
+  "article_url": "C/Earth",
+  "id": "full",
+  "name": "English Wikipedia all nopic 2026-06",
+  "prefix": "earth",
+  "title_index": {
+    "bytes": 709472096,
+    "sha256": "0d7bfb589c9de915eba5ca4cc7fb56aa68e6eb97b171171596ef99e2bb2acdf2"
+  },
+  "version": 1,
+  "zim": {
+    "bytes": 52690706555,
+    "sha256": "441a56d9e05b2d98f8ae9acb7986a513ed47904d73852c92dc6b7d50baa122e5"
+  }
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="update_install_allow">Allow Tonalli to install apps on the next screen, then come back and tap Install update again.</string>
+    <string name="update_install_unavailable">The downloaded update could not be verified. Download it again from Settings.</string>
+    <string name="update_install_failed">Android could not open the installer. Open Settings, then Apps, then Tonalli and allow installing apps.</string>
+</resources>

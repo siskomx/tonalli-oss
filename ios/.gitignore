@@ -1,0 +1,6 @@
+/target
+/web.zip
+/native
+/gen
+/node_modules
+/package-lock.json

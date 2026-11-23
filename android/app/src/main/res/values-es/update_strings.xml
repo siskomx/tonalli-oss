@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="update_install_allow">En la siguiente pantalla permite que Tonalli instale aplicaciones; luego vuelve y toca Instalar actualización otra vez.</string>
+    <string name="update_install_unavailable">No se pudo verificar la actualización descargada. Descárgala de nuevo desde Ajustes.</string>
+    <string name="update_install_failed">Android no pudo abrir el instalador. Abre Ajustes, luego Aplicaciones, luego Tonalli y permite instalar aplicaciones.</string>
+</resources>

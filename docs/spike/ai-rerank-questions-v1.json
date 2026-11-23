@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "retrieval_language": "en",
+  "note": "Full English questions are the BM25 retrieval queries without manual rewriting. Paired Spanish wording explicitly reuses those English-retrieved passages for later model comparison, not Spanish retrieval quality or gold relevance judgments.",
+  "questions": [
+    {
+      "id": "q01",
+      "retrieval_query_en": "What makes the trefoil knot nontrivial?",
+      "question_en": "What makes the trefoil knot nontrivial?",
+      "question_es": "¿Qué hace que el nudo trébol sea no trivial?"
+    },
+    {
+      "id": "q02",
+      "retrieval_query_en": "How is a bowline used to make a fixed loop?",
+      "question_en": "How is a bowline used to make a fixed loop?",
+      "question_es": "¿Cómo se usa el as de guía para formar un lazo fijo?"
+    },
+    {
+      "id": "q03",
+      "retrieval_query_en": "How is a reef knot tied, and what are its limitations?",
+      "question_en": "How is a reef knot tied, and what are its limitations?",
+      "question_es": "¿Cómo se ata un nudo llano y cuáles son sus limitaciones?"
+    },
+    {
+      "id": "q04",
+      "retrieval_query_en": "How is a clove hitch tied around an object?",
+      "question_en": "How is a clove hitch tied around an object?",
+      "question_es": "¿Cómo se ata un ballestrinque alrededor de un objeto?"
+    },
+    {
+      "id": "q05",
+      "retrieval_query_en": "How does a sheet bend join ropes of different sizes?",
+      "question_en": "How does a sheet bend join ropes of different sizes?",
+      "question_es": "¿Cómo une la vuelta de escota cuerdas de distintos grosores?"
+    },
+    {
+      "id": "q06",
+      "retrieval_query_en": "How is a figure-eight knot used as a stopper?",
+      "question_en": "How is a figure-eight knot used as a stopper?",
+      "question_es": "¿Cómo se usa el nudo de ocho como nudo de tope?"
+    },
+    {
+      "id": "q07",
+      "retrieval_query_en": "How is an overhand knot formed?",
+      "question_en": "How is an overhand knot formed?",
+      "question_es": "¿Cómo se forma un nudo simple?"
+    },
+    {
+      "id": "q08",
+      "retrieval_query_en": "How is a carrick bend used to join ropes?",
+      "question_en": "How is a carrick bend used to join ropes?",
+      "question_es": "¿Cómo se usa un nudo carrick para unir cuerdas?"
+    },
+    {
+      "id": "q09",
+      "retrieval_query_en": "How does a Munter hitch work for belaying or lowering?",
+      "question_en": "How does a Munter hitch work for belaying or lowering?",
+      "question_es": "¿Cómo funciona el nudo dinámico para asegurar o descender?"
+    },
+    {
+      "id": "q10",
+      "retrieval_query_en": "How did quipu encode information using knots?",
+      "question_en": "How did quipu encode information using knots?",
+      "question_es": "¿Cómo codificaban información los quipus mediante nudos?"
+    }
+  ]
+}

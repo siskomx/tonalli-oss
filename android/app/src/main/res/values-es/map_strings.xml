@@ -1,0 +1,6 @@
+<resources>
+    <string name="map_import_help">Elige un archivo de mapa PMTiles. Se guardará una copia verificada en la app; el original no cambia. La cobertura depende del archivo.</string>
+    <string name="map_import_choose">Elegir archivo de mapa</string>
+    <string name="map_import_running">Copiando y comprobando mapa…</string>
+    <string name="map_import_failed">No se pudo importar el mapa. Elige un archivo PMTiles completo y comprueba el espacio libre. Se conservaron los mapas instalados.</string>
+</resources>

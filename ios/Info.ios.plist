@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>NSAppTransportSecurity</key>
+  <dict>
+    <key>NSAllowsLocalNetworking</key>
+    <true/>
+  </dict>
+  <key>NSLocalNetworkUsageDescription</key>
+  <string>Tonalli shares the books and maps you choose with devices on your Wi-Fi, only while sharing is on and only after you approve a pairing code.</string>
+  <key>NSBluetoothAlwaysUsageDescription</key>
+  <string>Tonalli talks to your Meshtastic radio over Bluetooth, only after you choose a radio in Chat and only to read and send chat messages.</string>
+  <key>NSLocationWhenInUseUsageDescription</key>
+  <string>Tonalli shows where you are on an offline map, only when you tap the locate button. Your location stays on this iPhone and is never sent anywhere.</string>
+  <key>UIFileSharingEnabled</key>
+  <true/>
+  <key>LSSupportsOpeningDocumentsInPlace</key>
+  <true/>
+</dict>
+</plist>

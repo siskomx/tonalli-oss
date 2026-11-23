@@ -1,0 +1,7 @@
+<resources>
+    <string name="preparation_channel">Preparación de búsqueda en libros</string>
+    <string name="preparation_title">Preparando la búsqueda del libro</string>
+    <string name="preparation_running">Puedes seguir leyendo mientras se prepara la búsqueda.</string>
+    <string name="preparation_pause">Pausar</string>
+    <string name="preparation_cancel">Cancelar</string>
+</resources>

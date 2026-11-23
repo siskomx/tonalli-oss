@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="index_setup">Set up article-text search</string>
+    <string name="index_setup_help">Choose a saved library, then the folder containing its exported article-text index. Only matching trusted index profiles packaged with this app are supported. The index is copied once into private storage and verified; your source files and previous indexes are preserved.</string>
+    <string name="index_choose_library">Choose library</string>
+    <string name="index_back_library">Back to Library</string>
+    <string name="index_no_libraries">Open a library first. No saved sources were changed.</string>
+    <string name="index_unnamed_library">Unnamed library</string>
+    <string name="index_checking_library">Checking the selected library…</string>
+    <string name="index_no_profile">No matching trusted index profile is packaged for this library. Current profiles cover the small Knots, full English Wikipedia, and Medicine archives only. Title browsing remains available.</string>
+    <string name="index_no_picker">No folder picker is available. Existing content and indexes were preserved.</string>
+    <string name="index_cancelled">Index selection cancelled. Existing content and indexes were preserved.</string>
+    <string name="index_installing">Copying and verifying the index into private storage. Keep this screen open. Large indexes can take a while.</string>
+    <string name="index_failed">The index could not be installed. Check the exact trusted export, available private storage, and source access. Existing content and previous indexes were preserved.</string>
+</resources>

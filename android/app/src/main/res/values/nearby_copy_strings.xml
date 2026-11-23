@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nearby_copy_channel">Nearby library copies</string>
+    <string name="nearby_copy_title">Copying from a nearby library</string>
+    <string name="nearby_copy_help">Keep Wi-Fi connected. Open Tonalli to see progress.</string>
+    <string name="nearby_copy_pause">Pause</string>
+    <string name="nearby_copy_foreground_only">Background copying is unavailable. Keep Tonalli open while copying from a nearby library.</string>
+</resources>

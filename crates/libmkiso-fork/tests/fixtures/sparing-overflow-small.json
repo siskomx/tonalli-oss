@@ -1,0 +1,36 @@
+{
+  "kind": "authored malformed small UDF geometry; derived from upstream MIT byte-crafted fixture helpers",
+  "bytes": 667648,
+  "sha256": "cd02037ce12b1605abc4b0fb8ab2453315daca73d8a6b68c1cc19c9a28ff75f8",
+  "generatedPath": "target/iso-fixtures/libmkiso-sparing-overflow-small.udf",
+  "generator": "crates/libmkiso-fork/tests/udf_profiles.rs",
+  "generatorSha256": "f5f52c349f5f35a0429f9485f4790875d0873f5198c85bf429110506f2647179",
+  "test": "small_mixed_virtual_sparable_geometry_is_panic_free",
+  "exportEnvironment": "TONALLI_UDF_OVERFLOW_FIXTURE_OUT",
+  "upstreamCrate": "libmkiso0.1.5",
+  "upstreamArchiveSha256": "262387b6106a83fc5a389eba8a513fee4024ef83e60f22aff8a3bbe462b03289",
+  "attribution": "Derived from tests/udf_profiles.rs, copyright2026 windows-uup contributors, MIT (LICENSE retained); Tonalli adds the mixed-map corruption.",
+  "maps": [
+    "physical",
+    "virtual",
+    "sparable"
+  ],
+  "claimedPartitionBlocks": 4294967295,
+  "sparingPacketBlocks": 16,
+  "sparingOriginalBase": 4294967264,
+  "logicalRequestedBlock": 4294967265,
+  "sparingMappedBase": 32,
+  "expectedPhysicalBlock": 33,
+  "limits": {
+    "maxInputBytes": 68719476736,
+    "maxEntryBytes": 68719476736,
+    "maxTotalBytes": 137438953472,
+    "maxMetadataBytes": 16777216,
+    "maxEntries": 100000,
+    "maxDepth": 64,
+    "maxParserReads": 67108864,
+    "maxScratchBytes": 65536
+  },
+  "evidence": "target/libmkiso-sparing-red-export.log; actual debug addition overflow at src/udf_partition.rs271:51",
+  "recognitionNote": "The upstream independent fixture does not contain VRS markers; if fa\u00e7ade recognition rejects early, retain direct public UdfReader coverage in the normal core suite to exercise the arithmetic branch."
+}

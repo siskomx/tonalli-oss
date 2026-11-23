@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tonalli pairing</title>
+<h1>Pair with Tonalli</h1>
+<form><label>Pairing code <input name="code" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" required autocomplete="one-time-code"></label>
+<label>Device name <input name="label" maxlength="64" required autocomplete="off"></label><button>Pair</button></form><p role="status"></p>
+<script>
+document.querySelector('form').addEventListener('submit',async event=>{
+  event.preventDefault();
+  const status=document.querySelector('[role=status]');
+  try {
+    const form=new FormData(event.target);
+    const reply=await fetch('/pair',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({code:form.get('code'),label:form.get('label')})});
+    if(reply.ok) location.replace('/');
+    else status.textContent=reply.status===429?'Too many attempts. Try again later.':'Pairing failed. Check the code and device limit.';
+  } catch { status.textContent='Connection unavailable.'; }
+});
+</script></html>

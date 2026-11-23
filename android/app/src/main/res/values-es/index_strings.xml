@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="index_setup">Configurar búsqueda en artículos</string>
+    <string name="index_setup_help">Elige una biblioteca guardada y después la carpeta con su índice de texto exportado. Solo se admiten perfiles de índice de confianza compatibles incluidos en esta aplicación. El índice se copia una sola vez al almacenamiento privado y se verifica; se conservan los archivos originales y los índices anteriores.</string>
+    <string name="index_choose_library">Elegir biblioteca</string>
+    <string name="index_back_library">Volver a Biblioteca</string>
+    <string name="index_no_libraries">Abre primero una biblioteca. No se modificaron las fuentes guardadas.</string>
+    <string name="index_unnamed_library">Biblioteca sin nombre</string>
+    <string name="index_checking_library">Comprobando la biblioteca seleccionada…</string>
+    <string name="index_no_profile">Esta biblioteca no tiene un perfil de índice de confianza compatible incluido. Los perfiles actuales solo cubren los archivos de Nudos, Wikipedia completa en inglés y Medicina. Puedes seguir consultando los títulos.</string>
+    <string name="index_no_picker">No hay un selector de carpetas disponible. Se conservaron el contenido y los índices existentes.</string>
+    <string name="index_cancelled">Se canceló la selección del índice. Se conservaron el contenido y los índices existentes.</string>
+    <string name="index_installing">Copiando y verificando el índice en el almacenamiento privado. Mantén abierta esta pantalla. Los índices grandes pueden tardar.</string>
+    <string name="index_failed">No se pudo instalar el índice. Comprueba la exportación de confianza exacta, el espacio privado disponible y el acceso a la fuente. Se conservaron el contenido y los índices anteriores.</string>
+</resources>

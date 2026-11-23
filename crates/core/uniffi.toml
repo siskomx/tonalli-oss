@@ -1,0 +1,4 @@
+[crates.tonalli_core.bindings.kotlin]
+package_name = "uniffi.tonalli_core"
+cdylib_name = "tonalli_core"
+android = true

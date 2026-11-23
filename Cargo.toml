@@ -1,0 +1,16 @@
+[workspace]
+members = ["crates/core", "crates/spike-cli", "crates/mesh-gateway", "crates/chat-store"]
+exclude = ["crates/libmkiso-fork", "crates/llama-cpp-2-fork", "crates/meshtastic-fork", "desktop", "ios"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0-preview.5"
+edition = "2021"
+license = "GPL-3.0-or-later"
+rust-version = "1.96.1"
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
+panic = "unwind"
+strip = true

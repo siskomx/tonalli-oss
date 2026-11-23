@@ -1,0 +1,119 @@
+{
+  "version": 2,
+  "dataset_id": "small",
+  "generation": "generation-9zzLXu",
+  "source": {
+    "uuid": "b37270fdf26739bafc4f9f3c720e5d8f",
+    "md5": "c5b80a0d7ef2b1965dd85f55b275416c",
+    "bytes": 14093352,
+    "expected_sha256": "29a3ffa52a725d0ef9dd5359d27b864ec8454c61430c0bfb15fd1929f4b73390"
+  },
+  "files": [
+    {
+      "path": "CURRENT",
+      "bytes": 17,
+      "sha256": "3673b0232cc66a737ff8081a3b45dc752799fd9381703255afa6dcc59234d3e0"
+    },
+    {
+      "path": "generation-9zzLXu/.managed.json",
+      "bytes": 258,
+      "sha256": "f437b24008414f59386c7b7c8165e6b63ed199ed9bb21eadd7a11efdb27ce8cf"
+    },
+    {
+      "path": "generation-9zzLXu/6c5d1c1d58f44551b4cb0a401ea638b9.fast",
+      "bytes": 145,
+      "sha256": "f7928dbc6d8bffb59964c225fb0baef150791fe968cdbe6a8cbf172b7c01bb66"
+    },
+    {
+      "path": "generation-9zzLXu/6c5d1c1d58f44551b4cb0a401ea638b9.fieldnorm",
+      "bytes": 1915,
+      "sha256": "067cb89ad4ac557d185ae0c1d2bec892ceb1a4c76199be849b88d6d3b671dca3"
+    },
+    {
+      "path": "generation-9zzLXu/6c5d1c1d58f44551b4cb0a401ea638b9.idx",
+      "bytes": 386682,
+      "sha256": "6a38865183c123695f15dfb6ea599dc098b65cbe33902fb721a44acd7e903af5"
+    },
+    {
+      "path": "generation-9zzLXu/6c5d1c1d58f44551b4cb0a401ea638b9.pos",
+      "bytes": 782431,
+      "sha256": "65aab7b140fa4f51c3faca67d124ee48b9fef5a45b7dc24e74bc3baddc1e3f19"
+    },
+    {
+      "path": "generation-9zzLXu/6c5d1c1d58f44551b4cb0a401ea638b9.store",
+      "bytes": 17123,
+      "sha256": "ed65407d4dc97bc2fbcd6df00a52f21869f34e25a8c3d0f35a93cfc7f4887684"
+    },
+    {
+      "path": "generation-9zzLXu/6c5d1c1d58f44551b4cb0a401ea638b9.term",
+      "bytes": 305649,
+      "sha256": "d3df25311bd8b15b977718bcd6fe3e5c171e0bbe7349863b625c8d97d2ac7463"
+    },
+    {
+      "path": "generation-9zzLXu/meta.json",
+      "bytes": 1038,
+      "sha256": "a2715d5122ce5f68d2f8789723ed6dd06297a42d777201ab5329b630131dc8b3"
+    },
+    {
+      "path": "generation-9zzLXu/tonalli-meta.json",
+      "bytes": 477,
+      "sha256": "2e075adfa02c254cec2ee2f089f8d3ba3dba808536bff358ebd435481000122a"
+    }
+  ],
+  "queries": [
+    {
+      "query": "solar system",
+      "hits": [
+        {
+          "title": "Peripheral subgroup",
+          "url": "C/Peripheral_subgroup"
+        },
+        {
+          "title": "Munter hitch",
+          "url": "C/Munter_hitch"
+        },
+        {
+          "title": "Kontsevich invariant",
+          "url": "C/Kontsevich_invariant"
+        },
+        {
+          "title": "Warazan",
+          "url": "C/Warazan"
+        },
+        {
+          "title": "Quipu",
+          "url": "C/Quipu"
+        }
+      ]
+    },
+    {
+      "query": "photosynthesis",
+      "hits": []
+    },
+    {
+      "query": "Mexican history",
+      "hits": [
+        {
+          "title": "History of knot theory",
+          "url": "C/History_of_knot_theory"
+        },
+        {
+          "title": "San Diego Jam knot",
+          "url": "C/San_Diego_Jam_knot"
+        },
+        {
+          "title": "Quipu",
+          "url": "C/Quipu"
+        },
+        {
+          "title": "Croatian interlace",
+          "url": "C/Croatian_interlace"
+        },
+        {
+          "title": "Journal of Knot Theory and Its Ramifications",
+          "url": "C/Journal_of_Knot_Theory_and_Its_Ramifications"
+        }
+      ]
+    }
+  ]
+}

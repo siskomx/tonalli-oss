@@ -1,0 +1,52 @@
+{
+  "full": {
+    "acceptance_eligible": true,
+    "article_url": "C/Earth",
+    "name": "English Wikipedia all nopic 2026-06",
+    "pack_path": "docs/spike/packs/wikipedia_en_all_nopic_2026-06.zim",
+    "prefix": "earth",
+    "receipt_path": "target/react-full-wiki-verified.json",
+    "table_path": "target/title-index-v2-full-20261111-r1/titles-v2.idx",
+    "title_index": {
+      "bytes": 709472096,
+      "sha256": "0d7bfb589c9de915eba5ca4cc7fb56aa68e6eb97b171171596ef99e2bb2acdf2"
+    },
+    "zim": {
+      "bytes": 52690706555,
+      "sha256": "441a56d9e05b2d98f8ae9acb7986a513ed47904d73852c92dc6b7d50baa122e5"
+    }
+  },
+  "medicine": {
+    "acceptance_eligible": true,
+    "article_url": "C/Bandage",
+    "name": "WikiMed Medicine nopic 2026-10 (mid-size index fallback)",
+    "pack_path": "docs/spike/packs/wikipedia_en_medicine_nopic_2026-10.zim",
+    "prefix": "bandage",
+    "receipt_path": "target/medicine-metadata-r1/verified-source.json",
+    "table_path": "target/title-index-v2-medicine-20261112-r1/titles-v2.idx",
+    "title_index": {
+      "bytes": 13186046,
+      "sha256": "3e4f64512d3aaaa99004841ebd48fb79d5d569cdc5f3c754dc39c4f11373a598"
+    },
+    "zim": {
+      "bytes": 1047708415,
+      "sha256": "718fadad40b3491be3fa8f95181a948e4d726f97a79a14e0ef1b90c6b2b03625"
+    }
+  },
+  "small": {
+    "acceptance_eligible": false,
+    "article_url": "C/Trefoil_knot",
+    "name": "English Wikipedia knots 2026-10",
+    "pack_path": "docs/spike/packs/wikipedia_en_knots_maxi_2026-10.zim",
+    "prefix": "trefoil",
+    "table_path": "target/title-index-v2-small-20261111-r1/titles-v2.idx",
+    "title_index": {
+      "bytes": 54420,
+      "sha256": "e00c42904cc8fe6fdd4a416bad7d0552f51723816dfe197c6e03a4401ba32f8c"
+    },
+    "zim": {
+      "bytes": 14093352,
+      "sha256": "29a3ffa52a725d0ef9dd5359d27b864ec8454c61430c0bfb15fd1929f4b73390"
+    }
+  }
+}

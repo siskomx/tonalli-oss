@@ -1,0 +1,9 @@
+<resources>
+    <string name="tv_channel">Modo TV</string>
+    <string name="tv_notification_title">%1$s · modo TV</string>
+    <string name="tv_notification_help">Los archivos elegidos se pueden leer en tu red local. Detén el modo TV al terminar.</string>
+    <string name="tv_stop">Detener modo TV</string>
+    <string name="tv_start_failed">No se pudo iniciar el modo TV. Revisa el Wi-Fi y los permisos, y vuelve a intentarlo con Tonalli visible.</string>
+    <string name="tv_network_lost">El modo TV se detuvo porque la red local no está disponible.</string>
+    <string name="tv_low_battery">El modo TV se detuvo porque la batería está baja.</string>
+</resources>
