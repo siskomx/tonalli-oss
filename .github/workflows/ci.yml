@@ -29,7 +29,9 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y --no-install-recommends cmake clang perl make pkg-config
       - name: Toolchain (from rust-toolchain.toml)
         run: rustup show
-      - name: Test packs (small, checksum verified; multi-GB packs are skipped)
-        run: cargo run -q -p spike-cli --locked -- fetch --all
+      - name: Test ZIMs (small, checksum verified)
+        run: |
+          cargo run -q -p spike-cli --locked -- fetch --id wikipedia-en-knots
+          cargo run -q -p spike-cli --locked -- fetch --id wikipedia-es-climate-change
       - name: Tests (locked dependencies)
         run: cargo test --workspace --locked --no-fail-fast
