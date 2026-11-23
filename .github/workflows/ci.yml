@@ -30,4 +30,4 @@ jobs:
       - name: Toolchain (from rust-toolchain.toml)
         run: rustup show
       - name: Tests (locked dependencies)
-        run: cargo test --workspace --locked
+        run: cargo test --workspace --locked --no-fail-fast
