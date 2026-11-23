@@ -10,6 +10,17 @@ Get the Android APK, Windows ZIP or iPhone IPA from the
 `SHA256.json`. A step-by-step guide with screenshots is in [walkthrough](walkthrough/README.md)
 (Spanish: [guía rápida](walkthrough/LEEME.md)).
 
+<p align="center">
+  <img src="walkthrough/images/windows/07-library-book.png" alt="Library on Windows" width="48%">
+  <img src="walkthrough/images/windows/02-get-content.png" alt="Get content on Windows" width="48%">
+</p>
+<p align="center">
+  <img src="walkthrough/images/android/01-library.png" alt="Library on Android" width="23%">
+  <img src="walkthrough/images/android/09-article.png" alt="Reading an article on Android" width="23%">
+  <img src="walkthrough/images/android/20-maps.png" alt="Offline maps on Android" width="23%">
+  <img src="walkthrough/images/android/21-notes.png" alt="Encrypted notes on Android" width="23%">
+</p>
+
 ## In-app updates (optional, off by default)
 
 In Tonalli open **Settings -> AI and updates -> App updates** and enter:
